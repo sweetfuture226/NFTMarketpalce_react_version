@@ -1,4 +1,5 @@
 import cryptokiLogo from "../../../svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return <footer class="footer">
@@ -7,31 +8,31 @@ const Footer = () => {
                 <div class="footer-column footer-column-large">
                     <div class="footer-widget">
                         <div class="logo">
-                            <a class="logo-link" href="01-index.html">
+                            <Link class="logo-link" to="/">
                                 <div class="logo-img"><img src={cryptokiLogo} alt="logo" /></div>
                                 <div class="logo-text">Cryptoki</div>
-                            </a>
+                            </Link>
                         </div>
                         <div class="footer-text">
                             <p>We are a huge marketplace dedicated to connecting great artists of all mediums with their fans and
                                 unique token collectors!</p>
                         </div>
                         <ul class="social-icons-list">
-                            <li class="social-icon"><a href="#"><svg class="crumina-icon">
+                            <li class="social-icon"><Link to="#"><svg class="crumina-icon">
                                 <use xlinkHref="#facebook-icon"></use>
-                            </svg></a></li>
-                            <li class="social-icon"><a href="#"><svg class="crumina-icon">
+                            </svg></Link></li>
+                            <li class="social-icon"><Link to="#"><svg class="crumina-icon">
                                 <use xlinkHref="#twitter-icon"></use>
-                            </svg></a></li>
-                            <li class="social-icon"><a href="#"><svg class="crumina-icon">
+                            </svg></Link></li>
+                            <li class="social-icon"><Link to="#"><svg class="crumina-icon">
                                 <use xlinkHref="#instagram-icon"></use>
-                            </svg></a></li>
-                            <li class="social-icon"><a href="#"><svg class="crumina-icon">
+                            </svg></Link></li>
+                            <li class="social-icon"><Link to="#"><svg class="crumina-icon">
                                 <use xlinkHref="#twitch-icon"></use>
-                            </svg></a></li>
-                            <li class="social-icon"><a href="#"><svg class="crumina-icon">
+                            </svg></Link></li>
+                            <li class="social-icon"><Link to="#"><svg class="crumina-icon">
                                 <use xlinkHref="#discord-icon"></use>
-                            </svg></a></li>
+                            </svg></Link></li>
                         </ul>
                         <div class="subscribe-widget">
                             <form class="cryptoki-subscribe-form subscribe-form" action="forms/submit.php">
@@ -51,17 +52,17 @@ const Footer = () => {
                         <div class="widget-title">Cryptoki Market</div>
                         <div class="is-two-col-element">
                             <ul class="footer-menu">
-                                <li class="menu-item"><a class="menu-link" href="01-index.html">Home</a></li>
-                                <li class="menu-item"><a class="menu-link" href="02-explore.html">Explore</a></li>
-                                <li class="menu-item"><a class="menu-link" href="10-creators.html">Creators</a></li>
-                                <li class="menu-item"><a class="menu-link" href="11-collectors.html">Collectors</a></li>
-                                <li class="menu-item"><a class="menu-link" href="16-spotlight.html">Spotlight</a></li>
+                                <li class="menu-item"><Link class="menu-link" to="/">Home</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="/explore">Explore</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="10-creators.html">Creators</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="11-collectors.html">Collectors</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="16-spotlight.html">Spotlight</Link></li>
                             </ul>
                             <ul class="footer-menu">
-                                <li class="menu-item"><a class="menu-link" href="08-profile-page.html">Profile Page</a></li>
-                                <li class="menu-item"><a class="menu-link" href="03-explore-v2.html">Artwork Page</a></li>
-                                <li class="menu-item"><a class="menu-link" href="17-activity.html">Activity</a></li>
-                                <li class="menu-item"><a class="menu-link" href="26-upload-artwork.html">Upload Art</a></li>
+                                <li class="menu-item"><Link class="menu-link" to="08-profile-page.html">Profile Page</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="03-explore-v2.html">Artwork Page</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="17-activity.html">Activity</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="26-upload-artwork.html">Upload Art</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -70,11 +71,11 @@ const Footer = () => {
                     <div class="footer-widget">
                         <div class="widget-title">Explore</div>
                         <ul class="footer-menu">
-                            <li class="menu-item"><a class="menu-link" href="02-explore.html">3D Artworks</a></li>
-                            <li class="menu-item"><a class="menu-link" href="03-explore-v2.html">Motion Graphics</a></li>
-                            <li class="menu-item"><a class="menu-link" href="04-item-versions.html">Illustrations</a></li>
-                            <li class="menu-item"><a class="menu-link" href="02-explore.html">Photography</a></li>
-                            <li class="menu-item"><a class="menu-link" href="03-explore-v2.html">Pop Culture</a></li>
+                            <li class="menu-item"><Link class="menu-link" to="/explore">3D Artworks</Link></li>
+                            <li class="menu-item"><Link class="menu-link" to="03-explore-v2.html">Motion Graphics</Link></li>
+                            <li class="menu-item"><Link class="menu-link" to="/item-versions">Illustrations</Link></li>
+                            <li class="menu-item"><Link class="menu-link" to="/explore">Photography</Link></li>
+                            <li class="menu-item"><Link class="menu-link" to="03-explore-v2.html">Pop Culture</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -82,11 +83,11 @@ const Footer = () => {
                     <div class="footer-widget">
                         <div class="widget-title">Helpful Links</div>
                         <ul class="footer-menu">
-                            <li class="menu-item"><a class="menu-link" href="13-blog-classic.html">Our Blog</a></li>
-                            <li class="menu-item"><a class="menu-link" href="24-become-a-creator.html">Become a Creator</a></li>
-                            <li class="menu-item"><a class="menu-link" href="19-faq.html">FAQs</a></li>
-                            <li class="menu-item"><a class="menu-link" href="!#">About Us</a></li>
-                            <li class="menu-item"><a class="menu-link" href="20-contact.html">Contact</a></li>
+                            <li class="menu-item"><Link class="menu-link" to="13-blog-classic.html">Our Blog</Link></li>
+                            <li class="menu-item"><Link class="menu-link" to="24-become-a-creator.html">Become a Creator</Link></li>
+                            <li class="menu-item"><Link class="menu-link" to="19-faq.html">FAQs</Link></li>
+                            <li class="menu-item"><Link class="menu-link" to="!#">About Us</Link></li>
+                            <li class="menu-item"><Link class="menu-link" to="20-contact.html">Contact</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -96,8 +97,8 @@ const Footer = () => {
                     Cryptoki 2021 - All Rights Reserved
                 </span>
                 <ul class="sub-footer-menu">
-                    <li class="menu-item"><a class="menu-link" href="!#">Terms of Service</a></li>
-                    <li class="menu-item"><a class="menu-link" href="!#">Privacy</a></li>
+                    <li class="menu-item"><Link class="menu-link" to="!#">Terms of Service</Link></li>
+                    <li class="menu-item"><Link class="menu-link" to="!#">Privacy</Link></li>
                 </ul>
             </div>
         </div>

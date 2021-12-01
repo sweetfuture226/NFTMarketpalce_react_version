@@ -1,19 +1,21 @@
+import { Link } from "react-router-dom";
+
 const SubHeader = () => {
     return <nav class="border-bottom">
         <div class="navigation-wrapper container flex-space-between align-items-center">
             <ul class="navigation-menu">
-                <li class="menu-item"><a class="menu-link" href="01-index.html">Home</a></li>
+                <li class="menu-item"><a class="menu-link" href="/">Home</a></li>
                 <li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Explore
                     <span class="indicator"><svg class="crumina-icon">
                         <use xlinkHref="#arrow-down-icon"></use>
                     </svg></span>
                 </a>
                     <ul class="submenu">
-                        <li class="menu-item"><a class="menu-link" href="02-explore.html">Explore</a>
+                        <li class="menu-item"><a class="menu-link" href="/explore">Explore</a>
                         </li>
                         <li class="menu-item"><a class="menu-link" href="03-explore-v2.html">Explore v2</a>
                         </li>
-                        <li class="menu-item"><a class="menu-link" href="04-item-versions.html">Item versions</a>
+                        <li class="menu-item"><a class="menu-link" href="/item-versions">Item versions</a>
                         </li>
                     </ul>
                 </li>
@@ -25,11 +27,11 @@ const SubHeader = () => {
                     <use xlinkHref="#arrow-down-icon"></use>
                 </svg></span></a>
                     <ul class="submenu">
-                        <li class="menu-item"><a class="menu-link" href="05-product-page.html">Product v1</a>
+                        <li class="menu-item"><a class="menu-link" href="/product-page">Product v1</a>
                         </li>
-                        <li class="menu-item"><a class="menu-link" href="06-product-page-v2.html">Product v2</a>
+                        <li class="menu-item"><a class="menu-link" href="/product-page-v2">Product v2</a>
                         </li>
-                        <li class="menu-item"><a class="menu-link" href="07-product-page-v3.html">Product v3</a>
+                        <li class="menu-item"><a class="menu-link" href="/product-page-v3">Product v3</a>
                         </li>
                     </ul>
                 </li>
@@ -43,16 +45,16 @@ const SubHeader = () => {
                                 <div class="megamenu-title">Main Pages</div>
                                 <div class="flex-space-between">
                                     <ul class="submenu-column">
-                                        <li class="menu-item"><a href="01-index.html" class="menu-link">Home</a></li>
-                                        <li class="menu-item"><a href="02-explore.html" class="menu-link">Explore</a></li>
+                                        <li class="menu-item"><a href="/" class="menu-link">Home</a></li>
+                                        <li class="menu-item"><a href="/explore" class="menu-link">Explore</a></li>
                                         <li class="menu-item"><a href="03-explore-v2.html" class="menu-link">Explore v2</a></li>
-                                        <li class="menu-item"><a href="04-item-versions.html" class="menu-link">Item versions</a></li>
+                                        <li class="menu-item"><a href="/item-versions" class="menu-link">Item versions</a></li>
                                         <li class="menu-item"><a href="16-spotlight.html" class="menu-link">Spotlight</a></li>
-                                        <li class="menu-item"><a href="05-product-page.html" class="menu-link">Product page</a></li>
-                                        <li class="menu-item"><a href="06-product-page-v2.html" class="menu-link">Product page v2</a></li>
+                                        <li class="menu-item"><a href="/product-page" class="menu-link">Product page</a></li>
+                                        <li class="menu-item"><a href="/product-page-v2" class="menu-link">Product page v2</a></li>
                                     </ul>
                                     <ul class="submenu-column">
-                                        <li class="menu-item"><a href="07-product-page-v3.html" class="menu-link">Product page v3</a></li>
+                                        <li class="menu-item"><a href="/product-page-v3" class="menu-link">Product page v3</a></li>
                                         <li class="menu-item"><a href="12-blog-grid.html" class="menu-link">Blog grid</a></li>
                                         <li class="menu-item"><a href="13-blog-classic.html" class="menu-link">Blog classic</a></li>
                                         <li class="menu-item"><a href="14-blog-post-centered.html" class="menu-link">Blog postcentered</a>

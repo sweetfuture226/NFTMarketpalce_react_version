@@ -5,9 +5,12 @@ import notiThunb3 from './content/notifications/notif-thumb-3.png';
 import avatar from './avatar.png';
 import avatar2 from './avatar-2.png';
 import avatar8 from './avatar-8.png';
+import avatar4 from './avatar-4.png';
 import avatar5 from './avatar-5.png';
 import avatar3 from './avatar-3.png';
 import avatar10 from './avatar-10.png';
+import avatar15 from './avatar-15.png';
+import avatar14 from './avatar-14.png';
 
 import sliderImg1 from './content/slider/slider-img-1.png';
 import sliderImg2 from './content/slider/slider-img-2.png';
@@ -52,6 +55,10 @@ import newsThumb1 from "./content/latest-news/news-thumb1.png";
 import newsThumb2 from "./content/latest-news/news-thumb2.png";
 import newsThumb3 from "./content/latest-news/news-thumb3.png";
 
+import product2 from "./content/product-img/product-2.jpg";
+
+import productLarge1 from "./content/product-img/product-1-large.png";
+
 export {
     notiThunb1,
     notiThunb2,
@@ -93,5 +100,10 @@ export {
     subtleImg2,
     newsThumb1,
     newsThumb2,
-    newsThumb3
+    newsThumb3,
+    avatar15,
+    product2,
+    avatar4,
+    avatar14,
+    productLarge1
 };

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CardItem = ({count, img1, img2, heading, subHeading, currBid }) => {
     return (
         <div class="featured-item">
@@ -7,11 +9,11 @@ const CardItem = ({count, img1, img2, heading, subHeading, currBid }) => {
                         <use xlinkHref="#heart-icon"></use>
                     </svg><span class="count">{count}</span></div>
                     <div class="featured-item-image">
-                        <a href="05-product-page.html">
+                        <Link to="/product-page">
                             <picture>
                                 <img src={img1} width="304" height="340" alt="Featured" />
                             </picture>
-                        </a>
+                        </Link>
                     </div>
                     <div class="featured-item-info">
                         <div class="featured-countdown">
@@ -20,14 +22,14 @@ const CardItem = ({count, img1, img2, heading, subHeading, currBid }) => {
                             </svg></span>
                             <span class="js-countdown" data-timer="76403" data-labels="d : , h : , m : , s"></span>
                         </div>
-                        <div class="title"> <a href="05-product-page.html">{heading}</a></div>
+                        <div class="title"> <Link to="/product-page">{heading}</Link></div>
                         <div class="item-meta">
                             <span class="avatar box-26">
-                                <a href="08-profile-page.html">
+                                <Link to="08-profile-page.html">
                                     <picture>
                                         <img src={img2} alt="avatar" loading="lazy" width="100" height="100" />
                                     </picture>
-                                </a>
+                                </Link>
                                 <span class="verified"><svg class="crumina-icon">
                                     <use xlinkHref="#check-icon"></use>
                                 </svg></span>

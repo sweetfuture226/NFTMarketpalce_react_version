@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { avatar, notiThunb1, notiThunb2, notiThunb3 } from "../../../img";
 import cryptokiLogo from "../../../svg";
 
@@ -10,7 +11,7 @@ const Header = () => {
                     <div class="mobile-nav-panel">
                         <div class="mobile-nav-header">
 
-                            <div class="mobile-menu-logo logo"><a href="01-index.html"><img src={cryptokiLogo} alt="" /></a>
+                            <div class="mobile-menu-logo logo"><Link to="/"><img src={cryptokiLogo} alt="" /></Link>
                             </div>
 
                             <div class="close-icon">
@@ -23,68 +24,68 @@ const Header = () => {
 
                         <div class="mobile-menu-wrapper">
                             <ul class="mobile-menu">
-                                <li class="menu-item"><a class="menu-link" href="01-index.html">Home</a></li>
-                                <li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Explore
+                                <li class="menu-item"><Link class="menu-link" to="/">Home</Link></li>
+                                <li class="menu-item menu-item-has-children"><Link class="menu-link" to="#">Explore
                                     <span class="indicator"><svg class="crumina-icon">
                                         <use xlinkHref="#arrow-down-icon"></use>
                                     </svg></span>
-                                </a>
+                                </Link>
                                     <ul class="submenu">
-                                        <li class="menu-item"><a class="menu-link" href="02-explore.html">Explore</a>
+                                        <li class="menu-item"><Link class="menu-link" to="/explore">Explore</Link>
                                         </li>
-                                        <li class="menu-item"><a class="menu-link" href="03-explore-v2.html">Explore v2</a>
+                                        <li class="menu-item"><Link class="menu-link" to="03-explore-v2.html">Explore v2</Link>
                                         </li>
-                                        <li class="menu-item"><a class="menu-link" href="04-item-versions.html">Item versions</a>
+                                        <li class="menu-item"><Link class="menu-link" to="/item-versions">Item versions</Link>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="menu-item"><a class="menu-link" href="10-creators.html">Creators</a></li>
-                                <li class="menu-item"><a class="menu-link" href="11-collectors.html">Collectors</a></li>
-                                <li class="menu-item"><a class="menu-link" href="16-spotlight.html">Spotlight</a></li>
-                                <li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Product<span
+                                <li class="menu-item"><Link class="menu-link" to="10-creators.html">Creators</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="11-collectors.html">Collectors</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="16-spotlight.html">Spotlight</Link></li>
+                                <li class="menu-item menu-item-has-children"><Link class="menu-link" to="#">Product<span
                                     class="indicator"><svg class="crumina-icon">
                                         <use xlinkHref="#arrow-down-icon"></use>
-                                    </svg></span></a>
+                                    </svg></span></Link>
                                     <ul class="submenu">
-                                        <li class="menu-item"><a class="menu-link" href="05-product-page.html">Product v1</a>
+                                        <li class="menu-item"><Link class="menu-link" to="05-product-page.html">Product v1</Link>
                                         </li>
-                                        <li class="menu-item"><a class="menu-link" href="06-product-page-v2.html">Product v2</a>
+                                        <li class="menu-item"><Link class="menu-link" to="06-product-page-v2.html">Product v2</Link>
                                         </li>
-                                        <li class="menu-item"><a class="menu-link" href="07-product-page-v3.html">Product v3</a>
+                                        <li class="menu-item"><Link class="menu-link" to="/product-page-v3">Product v3</Link>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="menu-item menu-item-has-megamenu menu-item-has-children"><a class="menu-link" href="#">All
+                                <li class="menu-item menu-item-has-megamenu menu-item-has-children"><Link class="menu-link" to="#">All
                                     pages<span class="indicator"><svg class="crumina-icon">
                                         <use xlinkHref="#arrow-down-icon"></use>
-                                    </svg></span><span class="highlighted-item gradient-background">NEW</span></a>
+                                    </svg></span><span class="highlighted-item gradient-background">NEW</span></Link>
                                     <div class="megamenu">
                                         <div class="megamenu-wrapper">
                                             <div class="megamenu-column">
                                                 <div class="megamenu-title">Main Pages</div>
                                                 <div>
                                                     <ul class="submenu-column">
-                                                        <li class="menu-item"><a href="01-index.html" class="menu-link">Home</a></li>
-                                                        <li class="menu-item"><a href="02-explore.html" class="menu-link">Explore</a></li>
-                                                        <li class="menu-item"><a href="03-explore-v2.html" class="menu-link">Explore v2</a></li>
-                                                        <li class="menu-item"><a href="04-item-versions.html" class="menu-link">Item versions</a>
+                                                        <li class="menu-item"><Link to="/" class="menu-link">Home</Link></li>
+                                                        <li class="menu-item"><Link to="/explore" class="menu-link">Explore</Link></li>
+                                                        <li class="menu-item"><Link to="03-explore-v2.html" class="menu-link">Explore v2</Link></li>
+                                                        <li class="menu-item"><Link to="/item-versions" class="menu-link">Item versions</Link>
                                                         </li>
-                                                        <li class="menu-item"><a href="16-spotlight.html" class="menu-link">Spotlight</a></li>
-                                                        <li class="menu-item"><a href="05-product-page.html" class="menu-link">Product page</a></li>
-                                                        <li class="menu-item"><a href="06-product-page-v2.html" class="menu-link">Product page
-                                                            v2</a></li>
+                                                        <li class="menu-item"><Link to="16-spotlight.html" class="menu-link">Spotlight</Link></li>
+                                                        <li class="menu-item"><Link to="05-product-page.html" class="menu-link">Product page</Link></li>
+                                                        <li class="menu-item"><Link to="06-product-page-v2.html" class="menu-link">Product page
+                                                            v2</Link></li>
                                                     </ul>
                                                     <ul class="submenu-column">
-                                                        <li class="menu-item"><a href="07-product-page-v3.html" class="menu-link">Product page
-                                                            v3</a></li>
-                                                        <li class="menu-item"><a href="12-blog-grid.html" class="menu-link">Blog grid</a></li>
-                                                        <li class="menu-item"><a href="13-blog-classic.html" class="menu-link">Blog classic</a></li>
-                                                        <li class="menu-item"><a href="14-blog-post-centered.html" class="menu-link">Blog
-                                                            postcentered</a></li>
-                                                        <li class="menu-item"><a href="15-blog-post-sidebar.html" class="menu-link">Blog post
-                                                            sidebar</a></li>
-                                                        <li class="menu-item"><a href="19-faq.html" class="menu-link">FAQ</a></li>
-                                                        <li class="menu-item"><a href="20-contact.html" class="menu-link">Contact</a></li>
+                                                        <li class="menu-item"><Link to="/product-page-v3" class="menu-link">Product page
+                                                            v3</Link></li>
+                                                        <li class="menu-item"><Link to="12-blog-grid.html" class="menu-link">Blog grid</Link></li>
+                                                        <li class="menu-item"><Link to="13-blog-classic.html" class="menu-link">Blog classic</Link></li>
+                                                        <li class="menu-item"><Link to="14-blog-post-centered.html" class="menu-link">Blog
+                                                            postcentered</Link></li>
+                                                        <li class="menu-item"><Link to="15-blog-post-sidebar.html" class="menu-link">Blog post
+                                                            sidebar</Link></li>
+                                                        <li class="menu-item"><Link to="19-faq.html" class="menu-link">FAQ</Link></li>
+                                                        <li class="menu-item"><Link to="20-contact.html" class="menu-link">Contact</Link></li>
 
                                                     </ul>
                                                 </div>
@@ -93,71 +94,71 @@ const Header = () => {
                                                 <div class="megamenu-title">User pages</div>
                                                 <div>
                                                     <ul class="submenu-column">
-                                                        <li class="menu-item"><a href="08-profile-page.html" class="menu-link">Profile page</a></li>
-                                                        <li class="menu-item"><a href="09-profile-page-about.html" class="menu-link">Profile page
-                                                            about</a></li>
-                                                        <li class="menu-item"><a href="23-profile-info.html" class="menu-link">Profile info</a></li>
-                                                        <li class="menu-item"><a href="26-upload-artwork.html" class="menu-link">Upload artwork</a>
+                                                        <li class="menu-item"><Link to="08-profile-page.html" class="menu-link">Profile page</Link></li>
+                                                        <li class="menu-item"><Link to="09-profile-page-about.html" class="menu-link">Profile page
+                                                            about</Link></li>
+                                                        <li class="menu-item"><Link to="23-profile-info.html" class="menu-link">Profile info</Link></li>
+                                                        <li class="menu-item"><Link to="26-upload-artwork.html" class="menu-link">Upload artwork</Link>
                                                         </li>
-                                                        <li class="menu-item"><a href="25-notifications.html" class="menu-link">Notifications</a>
+                                                        <li class="menu-item"><Link to="25-notifications.html" class="menu-link">Notifications</Link>
                                                         </li>
-                                                        <li class="menu-item"><a href="27-shopping-cart.html" class="menu-link">Shopping cart</a>
+                                                        <li class="menu-item"><Link to="27-shopping-cart.html" class="menu-link">Shopping cart</Link>
                                                         </li>
-                                                        <li class="menu-item"><a href="28-checkout.html" class="menu-link">Checkout</a></li>
+                                                        <li class="menu-item"><Link to="28-checkout.html" class="menu-link">Checkout</Link></li>
                                                     </ul>
                                                     <ul class="submenu-column">
-                                                        <li class="menu-item"><a href="17-activity.html" class="menu-link">Activity</a></li>
-                                                        <li class="menu-item"><a href="10-creators.html" class="menu-link">Creators</a></li>
-                                                        <li class="menu-item"><a href="11-collectors.html" class="menu-link">Collectors</a></li>
-                                                        <li class="menu-item"><a href="24-become-a-creator.html" class="menu-link">Become a
-                                                            creator</a></li>
-                                                        <li class="menu-item"><a href="18-connect-a-wallet.html" class="menu-link">Connect a
-                                                            wallet</a></li>
-                                                        <li class="menu-item"><a href="21-login.html" class="menu-link">Login</a></li>
-                                                        <li class="menu-item"><a href="22-register.html" class="menu-link">Register</a></li>
+                                                        <li class="menu-item"><Link to="17-activity.html" class="menu-link">Activity</Link></li>
+                                                        <li class="menu-item"><Link to="10-creators.html" class="menu-link">Creators</Link></li>
+                                                        <li class="menu-item"><Link to="11-collectors.html" class="menu-link">Collectors</Link></li>
+                                                        <li class="menu-item"><Link to="24-become-a-creator.html" class="menu-link">Become a
+                                                            creator</Link></li>
+                                                        <li class="menu-item"><Link to="18-connect-a-wallet.html" class="menu-link">Connect a
+                                                            wallet</Link></li>
+                                                        <li class="menu-item"><Link to="21-login.html" class="menu-link">Login</Link></li>
+                                                        <li class="menu-item"><Link to="22-register.html" class="menu-link">Register</Link></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Blog<span
+                                <li class="menu-item menu-item-has-children"><Link class="menu-link" to="#">Blog<span
                                     class="indicator"><svg class="crumina-icon">
                                         <use xlinkHref="#arrow-down-icon"></use>
-                                    </svg></span></a>
+                                    </svg></span></Link>
                                     <ul class="submenu">
-                                        <li class="menu-item"><a class="menu-link" href="12-blog-grid.html">Blog grid</a>
+                                        <li class="menu-item"><Link class="menu-link" to="12-blog-grid.html">Blog grid</Link>
                                         </li>
-                                        <li class="menu-item"><a class="menu-link" href="13-blog-classic.html">Blog classic</a>
+                                        <li class="menu-item"><Link class="menu-link" to="13-blog-classic.html">Blog classic</Link>
                                         </li>
-                                        <li class="menu-item"><a class="menu-link" href="14-blog-post-centered.html">Blog post centered</a>
+                                        <li class="menu-item"><Link class="menu-link" to="14-blog-post-centered.html">Blog post centered</Link>
                                         </li>
-                                        <li class="menu-item"><a class="menu-link" href="15-blog-post-sidebar.html">Blog post sidebar</a>
+                                        <li class="menu-item"><Link class="menu-link" to="15-blog-post-sidebar.html">Blog post sidebar</Link>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="menu-item"><a class="menu-link" href="08-profile-page.html">My Collection<span class="count">
-                                    12</span></a></li>
+                                <li class="menu-item"><Link class="menu-link" to="08-profile-page.html">My Collection<span class="count">
+                                    12</span></Link></li>
                             </ul>
                         </div>
 
                         <div class="mobile-nav-footer">
                             <ul class="social-icons-list">
-                                <li class="social-icon"><a href="#"><svg class="crumina-icon">
+                                <li class="social-icon"><Link to="#"><svg class="crumina-icon">
                                     <use xlinkHref="#facebook-icon"></use>
-                                </svg></a></li>
-                                <li class="social-icon"><a href="#"><svg class="crumina-icon">
+                                </svg></Link></li>
+                                <li class="social-icon"><Link to="#"><svg class="crumina-icon">
                                     <use xlinkHref="#twitter-icon"></use>
-                                </svg></a></li>
-                                <li class="social-icon"><a href="#"><svg class="crumina-icon">
+                                </svg></Link></li>
+                                <li class="social-icon"><Link to="#"><svg class="crumina-icon">
                                     <use xlinkHref="#instagram-icon"></use>
-                                </svg></a></li>
-                                <li class="social-icon"><a href="#"><svg class="crumina-icon">
+                                </svg></Link></li>
+                                <li class="social-icon"><Link to="#"><svg class="crumina-icon">
                                     <use xlinkHref="#twitch-icon"></use>
-                                </svg></a></li>
-                                <li class="social-icon"><a href="#"><svg class="crumina-icon">
+                                </svg></Link></li>
+                                <li class="social-icon"><Link to="#"><svg class="crumina-icon">
                                     <use xlinkHref="#discord-icon"></use>
-                                </svg></a></li>
+                                </svg></Link></li>
                             </ul>
                         </div>
 
@@ -170,10 +171,10 @@ const Header = () => {
                     </div>
 
                     <div class="logo ">
-                        <a class="logo-link" href="01-index.html">
+                        <Link class="logo-link" to="/">
                             <div class="logo-img"><img src={cryptokiLogo} alt="logo" /></div>
                             <div class="logo-text">Cryptoki</div>
-                        </a>
+                        </Link>
                     </div>
 
                     <div class="searchbox">
@@ -208,9 +209,9 @@ const Header = () => {
                     </button>
 
                     <div class="collection-box">
-                        <a class="btn btn-normal btn-dark create-collection" href="26-upload-artwork.html">Create</a>
-                        <div class="collection-title"><a href="08-profile-page.html">My Collection<span
-                            class="count colored">12</span></a></div>
+                        <Link class="btn btn-normal btn-dark create-collection" to="26-upload-artwork.html">Create</Link>
+                        <div class="collection-title"><Link to="08-profile-page.html">My Collection<span
+                            class="count colored">12</span></Link></div>
                     </div>
 
                     <div class="user-activity-buttons">
@@ -232,12 +233,12 @@ const Header = () => {
                                     <div class="cart-product">
                                         <div class="thumb-box">
                                             aaaa
-                                            <a href="05-product-page.html"><img src={notiThunb1} width="50" height="50" alt="UI templates" loading="lazy" /></a>
+                                            <Link to="05-product-page.html"><img src={notiThunb1} width="50" height="50" alt="UI templates" loading="lazy" /></Link>
                                         </div>
                                         <div class="purchase-info">
                                             <div class="product-info">
-                                                <div class="product-title"><a href="05-product-page.html">Cryptoki NFT and Digital Market PSD
-                                                    Template</a></div>
+                                                <div class="product-title"><Link to="05-product-page.html">Cryptoki NFT and Digital Market PSD
+                                                    Template</Link></div>
                                                 <div class="product-price">$12.00</div>
                                             </div>
                                             <div class="product-type ui-templates">UI templates</div>
@@ -246,11 +247,11 @@ const Header = () => {
 
                                     <div class="cart-product">
                                         <div class="thumb-box">
-                                            <a href="06-product-page-v2.html"><img src={notiThunb2} width="50" height="50" alt="Social graphics" loading="lazy" /></a>
+                                            <Link to="06-product-page-v2.html"><img src={notiThunb2} width="50" height="50" alt="Social graphics" loading="lazy" /></Link>
                                         </div>
                                         <div class="purchase-info">
                                             <div class="product-info">
-                                                <div class="product-title"><a href="06-product-page-v2.html">Twitter Gaming Headers Pack 04</a>
+                                                <div class="product-title"><Link to="06-product-page-v2.html">Twitter Gaming Headers Pack 04</Link>
                                                 </div>
                                                 <div class="product-price">$40.00</div>
                                             </div>
@@ -260,12 +261,12 @@ const Header = () => {
 
                                     <div class="cart-product">
                                         <div class="thumb-box">
-                                            <a href="07-product-page-v3.html"><img src={notiThunb3} width="50" height="50" alt="Coded templates" loading="lazy" /></a>
+                                            <Link to="/product-page-v3"><img src={notiThunb3} width="50" height="50" alt="Coded templates" loading="lazy" /></Link>
                                         </div>
                                         <div class="purchase-info">
                                             <div class="product-info">
-                                                <div class="product-title"><a href="07-product-page-v3.html">Olympus WP - Social Networking
-                                                    Theme</a></div>
+                                                <div class="product-title"><Link to="/product-page-v3">Olympus WP - Social Networking
+                                                    Theme</Link></div>
                                                 <div class="product-price">$68.00</div>
                                             </div>
                                             <div class="product-type coded-templates">Coded templates</div>
@@ -279,8 +280,8 @@ const Header = () => {
                                     <div class="price">$120.00</div>
                                 </div>
                                 <div class="cart-buttons">
-                                    <a href="27-shopping-cart.html" class="btn-small gradient-background btn-square">Go to Cart</a>
-                                    <a href="28-checkout.html" class="btn-small btn-dark btn-square">Checkout</a>
+                                    <Link to="27-shopping-cart.html" class="btn-small gradient-background btn-square">Go to Cart</Link>
+                                    <Link to="28-checkout.html" class="btn-small btn-dark btn-square">Checkout</Link>
                                 </div>
                             </div>
                         </div>
@@ -313,9 +314,9 @@ const Header = () => {
                                         </div>
                                         <div class="notification-info">
                                             <div class="message">
-                                                <a href="08-profile-page.html" class="bold">@JackieJ</a> just commented on <a
-                                                    href="05-product-page.html" class="bold">Cryptoki NFT
-                                                    and Digital Market PSD Template</a>
+                                                <Link to="08-profile-page.html" class="bold">@JackieJ</Link> just commented on <Link
+                                                    to="05-product-page.html" class="bold">Cryptoki NFT
+                                                    and Digital Market PSD Template</Link>
                                             </div>
                                             <div class="publish-date">2 minutes ago</div>
                                         </div>
@@ -331,9 +332,9 @@ const Header = () => {
                                         </div>
                                         <div class="notification-info">
                                             <div class="message">
-                                                <a href="08-profile-page.html" class="bold">@CrimsonRay</a> just purchased<a
-                                                    href="06-product-page-v2.html" class="bold"> Cryptoki NFT
-                                                    and Digital Market PSD Template</a>
+                                                <Link to="08-profile-page.html" class="bold">@CrimsonRay</Link> just purchased<Link
+                                                    to="06-product-page-v2.html" class="bold"> Cryptoki NFT
+                                                    and Digital Market PSD Template</Link>
                                             </div>
                                             <div class="publish-date">10 minutes ago</div>
                                         </div>
@@ -348,9 +349,9 @@ const Header = () => {
                                         </div>
                                         <div class="notification-info">
                                             <div class="message">
-                                                <a href="08-profile-page.html" class="bold">@NoirArtks</a> just liked<a
-                                                    href="07-product-page-v3.html" class="bold">Twitter Gaming
-                                                    Headers Pack 04</a>
+                                                <Link to="08-profile-page.html" class="bold">@NoirArtks</Link> just liked<Link
+                                                    to="/product-page-v3" class="bold">Twitter Gaming
+                                                    Headers Pack 04</Link>
                                             </div>
                                             <div class="publish-date">37 minutes ago</div>
                                         </div>
@@ -365,16 +366,16 @@ const Header = () => {
                                             </span>
                                         </div>
                                         <div class="notification-info">
-                                            <div class="message"><a href="08-profile-page.html" class="bold">@CrimsonRay</a> just reviewed
-                                                <a href="05-product-page.html" class="bold">Cryptoki NFT and Digital Market PSD Template</a>
+                                            <div class="message"><Link to="08-profile-page.html" class="bold">@CrimsonRay</Link> just reviewed
+                                                <Link to="05-product-page.html" class="bold">Cryptoki NFT and Digital Market PSD Template</Link>
                                             </div>
                                             <div class="publish-date">49 minutes ago</div>
                                         </div>
                                     </div>
 
                                 </div>
-                                <a href="25-notifications.html" class="btn-small-fullwidth btn-dark btn-square">View all
-                                    Notifications</a>
+                                <Link to="25-notifications.html" class="btn-small-fullwidth btn-dark btn-square">View all
+                                    Notifications</Link>
                             </div>
                         </div>
 
@@ -419,45 +420,45 @@ const Header = () => {
                                     </div>
 
                                     <div class="profile-link">
-                                        <a class="btn btn-small gradient-background" href="08-profile-page.html">My Profile</a>
+                                        <Link class="btn btn-small gradient-background" to="08-profile-page.html">My Profile</Link>
                                     </div>
                                 </div>
 
                                 <ul class="profile-menu">
                                     <li class="profile">
-                                        <a href="23-profile-info.html"><svg class="crumina-icon">
+                                        <Link to="23-profile-info.html"><svg class="crumina-icon">
                                             <use xlinkHref="#user-icon"></use>
-                                        </svg>Profile Info</a>
+                                        </svg>Profile Info</Link>
                                     </li>
                                     <li class="account">
-                                        <a href="!#"><svg class="crumina-icon">
+                                        <Link to="!#"><svg class="crumina-icon">
                                             <use xlinkHref="#settings-icon"></use>
-                                        </svg>Account Settings</a>
+                                        </svg>Account Settings</Link>
                                     </li>
                                     <li class="notification">
-                                        <a href="!#"><svg class="crumina-icon">
+                                        <Link to="!#"><svg class="crumina-icon">
                                             <use xlinkHref="#slide-filter-icon"></use>
-                                        </svg>Notification Settings</a>
+                                        </svg>Notification Settings</Link>
                                     </li>
                                     <li class="artwork">
-                                        <a href="26-upload-artwork.html"><svg class="crumina-icon">
+                                        <Link to="26-upload-artwork.html"><svg class="crumina-icon">
                                             <use xlinkHref="#picture-icon"></use>
-                                        </svg>Create Artwork</a>
+                                        </svg>Create Artwork</Link>
                                     </li>
                                     <li class="wallet">
-                                        <a href="18-connect-a-wallet.html"><svg class="crumina-icon">
+                                        <Link to="18-connect-a-wallet.html"><svg class="crumina-icon">
                                             <use xlinkHref="#wallet-icon"></use>
-                                        </svg>Wallet info</a>
+                                        </svg>Wallet info</Link>
                                     </li>
                                     <li class="verification">
-                                        <a href="!#"><svg class="crumina-icon">
+                                        <Link to="!#"><svg class="crumina-icon">
                                             <use xlinkHref="#circle-checked-icon"></use>
-                                        </svg>Get Verified</a>
+                                        </svg>Get Verified</Link>
                                     </li>
                                     <li class="logout">
-                                        <a href="!#"><svg class="crumina-icon">
+                                        <Link to="!#"><svg class="crumina-icon">
                                             <use xlinkHref="#logout-icon"></use>
-                                        </svg>Log Out</a>
+                                        </svg>Log Out</Link>
                                     </li>
                                 </ul>
 

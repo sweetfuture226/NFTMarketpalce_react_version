@@ -3,6 +3,7 @@ import { avatar, avatar10, avatar2, avatar3, avatar5, avatar8, featureItem1, fea
 import Header from "./../../components/common/header/header";
 import Footer from './../../components/common/footer/footer';
 import CardItem from './../../components/staticPages/cards/cardItem';
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -30,7 +31,7 @@ const Home = () => {
                                     <div class="item-info">
                                         <div class="item-meta">
                                             <span class="avatar box-26">
-                                                <a href="08-profile-page.html">
+                                                <Link to="08-profile-page.html">
                                                     <picture>
                                                         <img
                                                             src={avatar}
@@ -40,7 +41,7 @@ const Home = () => {
                                                             height="100"
                                                         />
                                                     </picture>
-                                                </a>
+                                                </Link>
                                                 <span class="verified">
                                                     <svg class="crumina-icon">
                                                         <use xlinkHref="#check-icon"></use>
@@ -68,9 +69,9 @@ const Home = () => {
                                                 </div>
                                             </div>
                                             <div class="gradient-border_white-bg slide-button">
-                                                <a class="btn btn-normal" href="05-product-page.html">
+                                                <Link class="btn btn-normal" to="05-product-page.html">
                                                     Go to Item!
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -91,9 +92,9 @@ const Home = () => {
                                     <div class="slide-subtitle">WELCOME TO CRYPTOKI</div>
                                     <div class="slide-title">Discover the Best Artworks!</div>
                                     <div class="gradient-border-purple-bg slide-button">
-                                        <a class="btn btn-normal" href="02-explore.html">
+                                        <Link class="btn btn-normal" to="/explore">
                                             Explore Now!
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +113,7 @@ const Home = () => {
                                     <div class="item-info">
                                         <div class="item-meta">
                                             <span class="avatar box-26">
-                                                <a href="08-profile-page.html">
+                                                <Link to="08-profile-page.html">
                                                     <picture>
                                                         <img
                                                             src={avatar}
@@ -122,7 +123,7 @@ const Home = () => {
                                                             height="100"
                                                         />
                                                     </picture>
-                                                </a>
+                                                </Link>
                                                 <span class="verified">
                                                     <svg class="crumina-icon">
                                                         <use xlinkHref="#check-icon"></use>
@@ -150,12 +151,12 @@ const Home = () => {
                                                 </div>
                                             </div>
                                             <div class="gradient-border_dark-bg slide-button">
-                                                <a
+                                                <Link
                                                     class="btn btn-normal"
-                                                    href="06-product-page-v2.html"
+                                                    to="06-product-page-v2.html"
                                                 >
                                                     Go to Item!
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -217,16 +218,16 @@ const Home = () => {
                             <div class="creator-number">01</div>
                             <div class="creator-box">
                                 <div class="avatar box-64">
-                                    <a href="08-profile-page.html">
+                                    <Link to="08-profile-page.html">
                                         <picture>
                                             <img src={avatar} alt="avatar" loading="lazy" width="100" height="100" />
                                         </picture>
                                         <span class="verified"><svg class="crumina-icon">
                                             <use xlinkHref="#check-icon"></use>
-                                        </svg></span></a>
+                                        </svg></span></Link>
                                 </div>
                                 <div class="creator-meta">
-                                    <div class="title"><a href="08-profile-page.html">Dexter Stark</a></div>
+                                    <div class="title"><Link to="08-profile-page.html">Dexter Stark</Link></div>
                                     <div class="creator-meta">@DexterStark</div>
                                 </div>
                             </div>
@@ -236,26 +237,26 @@ const Home = () => {
                             </div>
                             <div class="projects-previews">
                                 <div class="preview-box box-68">
-                                    <a href="05-product-page.html">
+                                    <Link to="05-product-page.html">
                                         <picture>
                                             <img src={projectThumb1} height="68" width="68" alt="" loading="lazy" />
                                         </picture>
 
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="preview-box box-68">
-                                    <a href="06-product-page-v2.html">
+                                    <Link to="06-product-page-v2.html">
                                         <picture>
                                             <img src={projectThumb2} height="66" width="66" alt="" loading="lazy" />
                                         </picture>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="preview-box box-68">
-                                    <a href="07-product-page-v3.html">
+                                    <Link to="/product-page-v3">
                                         <picture>
                                             <img src={projectThumb3} height="68" width="68" alt="" loading="lazy" />
                                         </picture>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -263,13 +264,13 @@ const Home = () => {
                             <div class="creator-number">02</div>
                             <div class="creator-box">
                                 <div class="avatar box-64">
-                                    <a href="08-profile-page.html">
+                                    <Link to="08-profile-page.html">
                                         <img src={avatar2} width="52" height="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
                                             <use xlinkHref="#check-icon"></use>
-                                        </svg></span></a>
+                                        </svg></span></Link>
                                 </div>
                                 <div class="creator-meta">
-                                    <div class="title"><a href="08-profile-page.html">Jackie Jones</a></div>
+                                    <div class="title"><Link to="08-profile-page.html">Jackie Jones</Link></div>
                                     <div class="creator-meta">@JackieJ</div>
                                 </div>
                             </div>
@@ -279,26 +280,26 @@ const Home = () => {
                             </div>
                             <div class="projects-previews">
                                 <div class="preview-box box-68">
-                                    <a href="05-product-page.html">
+                                    <Link to="05-product-page.html">
                                         <picture>
                                             <img src={projectThumb5} height="68" width="68" alt="" loading="lazy" />
                                         </picture>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="preview-box box-68">
-                                    <a href="06-product-page-v2.html">
+                                    <Link to="06-product-page-v2.html">
                                         <picture>
                                             <img src={projectThumb9} height="74" width="74" alt="" loading="lazy" />
                                         </picture>
 
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="preview-box box-68">
-                                    <a href="07-product-page-v3.html">
+                                    <Link to="/product-page-v3">
                                         <picture>
                                             <img src={projectThumb10} height="68" width="68" alt="" loading="lazy" />
                                         </picture>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -306,13 +307,13 @@ const Home = () => {
                             <div class="creator-number">03</div>
                             <div class="creator-box">
                                 <div class="avatar box-64">
-                                    <a href="08-profile-page.html">
+                                    <Link to="08-profile-page.html">
                                         <img src={avatar5} height="52" width="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
                                             <use xlinkHref="#check-icon"></use>
-                                        </svg></span></a>
+                                        </svg></span></Link>
                                 </div>
                                 <div class="creator-meta">
-                                    <div class="title"><a href="08-profile-page.html">Noir Artworks</a></div>
+                                    <div class="title"><Link to="08-profile-page.html">Noir Artworks</Link></div>
                                     <div class="creator-meta">@noirArtks</div>
                                 </div>
                             </div>
@@ -322,25 +323,25 @@ const Home = () => {
                             </div>
                             <div class="projects-previews">
                                 <div class="preview-box box-68">
-                                    <a href="05-product-page.html">
+                                    <Link to="05-product-page.html">
                                         <picture>
                                             <img src={projectThumb4} height="68" width="68" alt="" loading="lazy" />
                                         </picture>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="preview-box box-68">
-                                    <a href="06-product-page-v2.html">
+                                    <Link to="06-product-page-v2.html">
                                         <picture>
                                             <img src={projectThumb11} height="68" width="68" alt="" loading="lazy" />
                                         </picture>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="preview-box box-68">
-                                    <a href="07-product-page-v3.html">
+                                    <Link to="/product-page-v3">
                                         <picture>
                                             <img src={projectThumb12} height="68" width="68" alt="" loading="lazy" />
                                         </picture>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -348,13 +349,13 @@ const Home = () => {
                             <div class="creator-number">04</div>
                             <div class="creator-box">
                                 <div class="avatar box-64">
-                                    <a href="08-profile-page.html">
+                                    <Link to="08-profile-page.html">
                                         <img src={avatar3} height="52" width="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
                                             <use xlinkHref="#check-icon"></use>
-                                        </svg></span></a>
+                                        </svg></span></Link>
                                 </div>
                                 <div class="creator-meta">
-                                    <div class="title"><a href="08-profile-page.html">The Green Goo</a></div>
+                                    <div class="title"><Link to="08-profile-page.html">The Green Goo</Link></div>
                                     <div class="creator-meta">@daGreenGoo</div>
                                 </div>
                             </div>
@@ -364,13 +365,13 @@ const Home = () => {
                             </div>
                             <div class="projects-previews">
                                 <div class="preview-box box-68">
-                                    <a href="05-product-page.html"><img src={projectThumb13} height="68" width="68" alt="" loading="lazy" /></a>
+                                    <Link to="05-product-page.html"><img src={projectThumb13} height="68" width="68" alt="" loading="lazy" /></Link>
                                 </div>
                                 <div class="preview-box box-68">
-                                    <a href="06-product-page-v2.html"><img src={projectThumb14} height="68" width="68" alt="" loading="lazy" /></a>
+                                    <Link to="06-product-page-v2.html"><img src={projectThumb14} height="68" width="68" alt="" loading="lazy" /></Link>
                                 </div>
                                 <div class="preview-box box-68">
-                                    <a href="07-product-page-v3.html"><img src={projectThumb8} height="74" width="74" alt="" loading="lazy" /></a>
+                                    <Link to="/product-page-v3"><img src={projectThumb8} height="74" width="74" alt="" loading="lazy" /></Link>
                                 </div>
                             </div>
                         </div>
@@ -378,13 +379,13 @@ const Home = () => {
                             <div class="creator-number">05</div>
                             <div class="creator-box">
                                 <div class="avatar box-64">
-                                    <a href="08-profile-page.html">
+                                    <Link to="08-profile-page.html">
                                         <img src={avatar10} width="52" height="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
                                             <use xlinkHref="#check-icon"></use>
-                                        </svg></span></a>
+                                        </svg></span></Link>
                                 </div>
                                 <div class="creator-meta">
-                                    <div class="title"><a href="08-profile-page.html">Nicholas Stevens</a></div>
+                                    <div class="title"><Link to="08-profile-page.html">Nicholas Stevens</Link></div>
                                     <div class="creator-meta">@nickstevens</div>
                                 </div>
                             </div>
@@ -394,26 +395,26 @@ const Home = () => {
                             </div>
                             <div class="projects-previews">
                                 <div class="preview-box box-68">
-                                    <a href="05-product-page.html"><img src={projectThumb15} height="68" width="68" alt="" loading="lazy" /></a>
+                                    <Link to="05-product-page.html"><img src={projectThumb15} height="68" width="68" alt="" loading="lazy" /></Link>
                                 </div>
                                 <div class="preview-box box-68">
-                                    <a href="06-product-page-v2.html"><img src={projectThumb16} height="68" width="68" alt="" loading="lazy" /></a>
+                                    <Link to="06-product-page-v2.html"><img src={projectThumb16} height="68" width="68" alt="" loading="lazy" /></Link>
                                 </div>
                                 <div class="preview-box box-68">
-                                    <a href="07-product-page-v3.html"><img src={projectThumb17} height="68" width="68" alt="" loading="lazy" /></a>
+                                    <Link to="/product-page-v3"><img src={projectThumb17} height="68" width="68" alt="" loading="lazy" /></Link>
                                 </div>
                             </div>
                         </div>
                         <div class="top-creator-item">
                             <div class="creator-number">06</div>
                             <div class="creator-box">
-                                <div class="avatar box-64"><a href="08-profile-page.html">
+                                <div class="avatar box-64"><Link to="08-profile-page.html">
                                     <img src={avatar8} height="52" width="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
                                         <use xlinkHref="#check-icon"></use>
-                                    </svg></span></a>
+                                    </svg></span></Link>
                                 </div>
                                 <div class="creator-meta">
-                                    <div class="title"><a href="08-profile-page.html">Bearded Wonder</a></div>
+                                    <div class="title"><Link to="08-profile-page.html">Bearded Wonder</Link></div>
                                     <div class="creator-meta">@beardedwndr</div>
                                 </div>
                             </div>
@@ -423,13 +424,13 @@ const Home = () => {
                             </div>
                             <div class="projects-previews">
                                 <div class="preview-box box-68">
-                                    <a href="05-product-page.html"><img src={projectThumb18} height="68" width="68" alt="" loading="lazy" /></a>
+                                    <Link to="05-product-page.html"><img src={projectThumb18} height="68" width="68" alt="" loading="lazy" /></Link>
                                 </div>
                                 <div class="preview-box box-68">
-                                    <a href="06-product-page-v2.html"><img src={projectThumb19} height="68" width="68" alt="" loading="lazy" /></a>
+                                    <Link to="06-product-page-v2.html"><img src={projectThumb19} height="68" width="68" alt="" loading="lazy" /></Link>
                                 </div>
                                 <div class="preview-box box-68">
-                                    <a href="07-product-page-v3.html"><img src={projectThumb20} height="68" width="68" alt="" loading="lazy" /></a>
+                                    <Link to="/product-page-v3"><img src={projectThumb20} height="68" width="68" alt="" loading="lazy" /></Link>
                                 </div>
                             </div>
                         </div>
@@ -439,7 +440,7 @@ const Home = () => {
                 <div class="container section-padding">
                     <div class="section-title-wrapper">
                         <div class="section-title"><span class="gradient-text">Newest</span> Items</div>
-                        <div class="all-items-link"><a href="02-explore.html">Explore all Artworks</a></div>
+                        <div class="all-items-link"><Link to="/explore">Explore all Artworks</Link></div>
                     </div>
 
                     <div class="featured-box">
@@ -449,7 +450,7 @@ const Home = () => {
                             })}
                         </div>
                         <div class="more-section flex-center">
-                            <a class="btn btn-normal btn-dark" href="03-explore-v2.html">View All Artworks</a>
+                            <Link class="btn btn-normal btn-dark" to="03-explore-v2.html">View All Artworks</Link>
                         </div>
                     </div>
 
@@ -458,7 +459,7 @@ const Home = () => {
                 <div class="container section-padding">
                     <div class="section-title-wrapper">
                         <div class="section-title"><span class="gradient-text">Featured</span> Creators</div>
-                        <div class="all-items-link"><a href="10-creators.html">Explore all Creators</a></div>
+                        <div class="all-items-link"><Link to="10-creators.html">Explore all Creators</Link></div>
                     </div>
                     <div class="featured-creators-box grid-2-columns">
                         <div class="featured-creators-item">
@@ -466,10 +467,10 @@ const Home = () => {
                             <div class="featured-creators-wrapper">
                                 <div class="featured-creators-info-wrapper">
                                     <div class="featured-creators-info">
-                                        <div class="title h4"><a href="08-profile-page.html">Dexter Stark</a></div>
+                                        <div class="title h4"><Link to="08-profile-page.html">Dexter Stark</Link></div>
                                         <div class="item-meta">
                                             <span class="avatar box-26">
-                                                <a href="08-profile-page.html"><img src={avatar} height="100" width="100" alt="" loading="lazy" /></a>
+                                                <Link to="08-profile-page.html"><img src={avatar} height="100" width="100" alt="" loading="lazy" /></Link>
                                                 <span class="verified"><svg class="crumina-icon"><use xlinkHref="#check-icon"></use></svg></span>
                                             </span>
                                             @DexterStark
@@ -480,21 +481,21 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <ul class="social-icons-list">
-                                    <li class="social-icon icon-border"><a href="#"><svg class="crumina-icon">
+                                    <li class="social-icon icon-border"><Link to="#"><svg class="crumina-icon">
                                         <use xlinkHref="#link-icon"></use>
-                                    </svg></a></li>
-                                    <li class="social-icon icon-border"><a href="#"><svg class="crumina-icon">
+                                    </svg></Link></li>
+                                    <li class="social-icon icon-border"><Link to="#"><svg class="crumina-icon">
                                         <use xlinkHref="#facebook-icon"></use>
-                                    </svg></a></li>
-                                    <li class="social-icon icon-border"><a href="#"><svg class="crumina-icon">
+                                    </svg></Link></li>
+                                    <li class="social-icon icon-border"><Link to="#"><svg class="crumina-icon">
                                         <use xlinkHref="#twitter-icon"></use>
-                                    </svg></a></li>
-                                    <li class="social-icon icon-border"><a href="#"><svg class="crumina-icon">
+                                    </svg></Link></li>
+                                    <li class="social-icon icon-border"><Link to="#"><svg class="crumina-icon">
                                         <use xlinkHref="#instagram-icon"></use>
-                                    </svg></a></li>
-                                    <li class="social-icon icon-border"><a href="#"><svg class="crumina-icon">
+                                    </svg></Link></li>
+                                    <li class="social-icon icon-border"><Link to="#"><svg class="crumina-icon">
                                         <use xlinkHref="#twitch-icon"></use>
-                                    </svg></a></li>
+                                    </svg></Link></li>
                                 </ul>
                                 <div class="about-creator">
                                     <p>I’m a graphic designer and illustrator from Mexico City. Since 2 years ago I specialize on big mural
@@ -520,21 +521,21 @@ const Home = () => {
                                 </div>
                                 <div class="projects-previews">
                                     <div class="preview-box">
-                                        <a href="05-product-page.html">
+                                        <Link to="05-product-page.html">
                                             <img src={projectThumb1} width="68" height="68" alt="" loading="lazy" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div class="preview-box">
-                                        <a href="06-product-page-v2.html"><img src={projectThumb2} height="66" width="66" alt="" loading="lazy" /></a>
+                                        <Link to="06-product-page-v2.html"><img src={projectThumb2} height="66" width="66" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box">
-                                        <a href="07-product-page-v3.html"><img src={projectThumb3} width="68" height="68" alt="" loading="lazy" /></a>
+                                        <Link to="/product-page-v3"><img src={projectThumb3} width="68" height="68" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box">
-                                        <a href="05-product-page.html"><img src={projectThumb21} height="50" width="50" alt="" loading="lazy" /></a>
+                                        <Link to="05-product-page.html"><img src={projectThumb21} height="50" width="50" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box more-projects">
-                                        <a href="08-profile-page.html"><svg class="crumina-icon"><use xlinkHref="#dots-icon"></use></svg></a>
+                                        <Link to="08-profile-page.html"><svg class="crumina-icon"><use xlinkHref="#dots-icon"></use></svg></Link>
                                     </div>
                                 </div>
                             </div>
@@ -544,9 +545,9 @@ const Home = () => {
                             <div class="featured-creators-wrapper">
                                 <div class="featured-creators-info-wrapper">
                                     <div class="featured-creators-info">
-                                        <div class="title h4"><a href="08-profile-page.html">Noir Artworks</a></div>
+                                        <div class="title h4"><Link to="08-profile-page.html">Noir Artworks</Link></div>
                                         <div class="item-meta"><span class="avatar box-26">
-                                            <a href="08-profile-page.html"><img src={avatar5} height="52" width="52" alt="" loading="lazy" /></a>
+                                            <Link to="08-profile-page.html"><img src={avatar5} height="52" width="52" alt="" loading="lazy" /></Link>
                                             <span class="verified">
                                                 <svg class="crumina-icon">
                                                     <use xlinkHref="#check-icon"></use>
@@ -557,21 +558,21 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <ul class="social-icons-list">
-                                    <li class="social-icon icon-border"><a href="#"><svg class="crumina-icon">
+                                    <li class="social-icon icon-border"><Link to="#"><svg class="crumina-icon">
                                         <use xlinkHref="#twitter-icon"></use>
-                                    </svg></a></li>
-                                    <li class="social-icon icon-border"><a href="#"><svg class="crumina-icon">
+                                    </svg></Link></li>
+                                    <li class="social-icon icon-border"><Link to="#"><svg class="crumina-icon">
                                         <use xlinkHref="#instagram-icon"></use>
-                                    </svg></a></li>
-                                    <li class="social-icon icon-border"><a href="#"><svg class="crumina-icon">
+                                    </svg></Link></li>
+                                    <li class="social-icon icon-border"><Link to="#"><svg class="crumina-icon">
                                         <use xlinkHref="#twitch-icon"></use>
-                                    </svg></a></li>
-                                    <li class="social-icon icon-border"><a href="#"><svg class="crumina-icon">
+                                    </svg></Link></li>
+                                    <li class="social-icon icon-border"><Link to="#"><svg class="crumina-icon">
                                         <use xlinkHref="#pinterest-icon"></use>
-                                    </svg></a></li>
-                                    <li class="social-icon icon-border"><a href="#"><svg class="crumina-icon">
+                                    </svg></Link></li>
+                                    <li class="social-icon icon-border"><Link to="#"><svg class="crumina-icon">
                                         <use xlinkHref="#reddit-icon"></use>
-                                    </svg></a></li>
+                                    </svg></Link></li>
                                 </ul>
                                 <div class="about-creator">
                                     <p>I am a self-taught digital artist who specializes in 3d art and motion graphics. Most of my works are
@@ -597,19 +598,19 @@ const Home = () => {
                                 </div>
                                 <div class="projects-previews">
                                     <div class="preview-box">
-                                        <a href="05-product-page.html"><img src={projectThumb4} width="68" height="68" alt="" loading="lazy" /></a>
+                                        <Link to="05-product-page.html"><img src={projectThumb4} width="68" height="68" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box">
-                                        <a href="06-product-page-v2.html"><img src={projectThumb11} height="68" width="68" alt="" loading="lazy" /></a>
+                                        <Link to="06-product-page-v2.html"><img src={projectThumb11} height="68" width="68" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box">
-                                        <a href="07-product-page-v3.html"><img src={projectThumb12} width="68" height="68" alt="" loading="lazy" /></a>
+                                        <Link to="/product-page-v3"><img src={projectThumb12} width="68" height="68" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box">
-                                        <a href="05-product-page.html"><img src={projectThumb22} height="50" width="50" alt="" loading="lazy" /></a>
+                                        <Link to="05-product-page.html"><img src={projectThumb22} height="50" width="50" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box more-projects">
-                                        <a href="08-profile-page.html"><svg class="crumina-icon"><use xlinkHref="#dots-icon"></use></svg></a>
+                                        <Link to="08-profile-page.html"><svg class="crumina-icon"><use xlinkHref="#dots-icon"></use></svg></Link>
                                     </div>
                                 </div>
                             </div>
@@ -622,7 +623,7 @@ const Home = () => {
                             <div class="h2">Become a Creator!</div>
                         </div>
                         <div class="subscribe-form">
-                            <a href="24-become-a-creator.html" class="btn btn-normal btn-dark">Start Selling!</a>
+                            <Link to="24-become-a-creator.html" class="btn btn-normal btn-dark">Start Selling!</Link>
                         </div>
                     </div>
                 </div>
@@ -630,81 +631,81 @@ const Home = () => {
                 <div class="container section-padding">
                     <div class="section-title-wrapper">
                         <div class="section-title">Latest <span class="gradient-text">News</span></div>
-                        <div class="all-items-link"><a href="12-blog-grid.html">View all Blog Posts</a></div>
+                        <div class="all-items-link"><Link to="12-blog-grid.html">View all Blog Posts</Link></div>
                     </div>
                     <div class="latest-news-box grid-3-columns">
                         <div class="news-item">
                             <div class="news-thumb">
-                                <a href="14-blog-post-centered.html">
-                                    <img src={newsThumb1} width="460" height="260" alt="" loading="lazy" /></a>
+                                <Link to="14-blog-post-centered.html">
+                                    <img src={newsThumb1} width="460" height="260" alt="" loading="lazy" /></Link>
                             </div>
                             <div class="news-content">
                                 <div class="news-meta">
                                     <div class="news-tags">
-                                        <span class="tag-item"><a>Guides</a></span>
+                                        <span class="tag-item"><Link>Guides</Link></span>
                                     </div>
-                                    by <a href="08-profile-page.html">Cryptoki</a>, March 26th, 2021
+                                    by <Link to="08-profile-page.html">Cryptoki</Link>, March 26th, 2021
                                 </div>
-                                <div class="news-title h5"><a href="15-blog-post-sidebar.html">We explain with details everything you need
+                                <div class="news-title h5"><Link to="15-blog-post-sidebar.html">We explain with details everything you need
                                     to know
                                     about crypto art and
-                                    cryptocurrencies!</a></div>
+                                    cryptocurrencies!</Link></div>
                                 <div class="news-excerpt">A cryptocurrency is a digital asset designed to work as a medium of exchange
                                     wherein individual coin ownership records...</div>
                                 <div class="read-more-link">
-                                    <a href="14-blog-post-centered.html">Read More<svg class="crumina-icon">
+                                    <Link to="14-blog-post-centered.html">Read More<svg class="crumina-icon">
                                         <use xlinkHref="#arrow-right2-icon"></use>
-                                    </svg></a>
+                                    </svg></Link>
                                 </div>
                             </div>
                         </div>
                         <div class="news-item">
                             <div class="news-thumb">
-                                <a href="14-blog-post-centered.html">
-                                    <img src={newsThumb2} height="260" width="460" alt="" loading="lazy" /></a>
+                                <Link to="14-blog-post-centered.html">
+                                    <img src={newsThumb2} height="260" width="460" alt="" loading="lazy" /></Link>
                             </div>
                             <div class="news-content">
                                 <div class="news-meta">
                                     <div class="news-tags">
-                                        <span class="tag-item"><a>Guides</a></span>
-                                        <span class="tag-item"><a>News</a></span>
+                                        <span class="tag-item"><Link>Guides</Link></span>
+                                        <span class="tag-item"><Link>News</Link></span>
                                     </div>
-                                    by <a href="08-profile-page.html">Marina Valentine</a>, March 13th, 2021
+                                    by <Link to="08-profile-page.html">Marina Valentine</Link>, March 13th, 2021
                                 </div>
-                                <div class="news-title h5"><a href="15-blog-post-sidebar.html">Here’s a quick guide about how to make
+                                <div class="news-title h5"><Link to="15-blog-post-sidebar.html">Here’s a quick guide about how to make
                                     money
                                     selling your artworks with
-                                    Criptoki!</a></div>
+                                    Criptoki!</Link></div>
                                 <div class="news-excerpt">A cryptocurrency is a digital asset designed to work as a medium of exchange
                                     wherein individual coin ownership records...</div>
                                 <div class="read-more-link">
-                                    <a href="15-blog-post-sidebar.html">Read More<svg class="crumina-icon">
+                                    <Link to="15-blog-post-sidebar.html">Read More<svg class="crumina-icon">
                                         <use xlinkHref="#arrow-right2-icon"></use>
-                                    </svg></a>
+                                    </svg></Link>
                                 </div>
                             </div>
                         </div>
                         <div class="news-item">
                             <div class="news-thumb">
-                                <a href="15-blog-post-sidebar.html">
-                                    <img src={newsThumb3} width="460" height="260" alt="" loading="lazy" /></a>
+                                <Link to="15-blog-post-sidebar.html">
+                                    <img src={newsThumb3} width="460" height="260" alt="" loading="lazy" /></Link>
                             </div>
                             <div class="news-content">
                                 <div class="news-meta">
                                     <div class="news-tags">
-                                        <span class="tag-item"><a>Currencies</a></span>
+                                        <span class="tag-item"><Link>Currencies</Link></span>
                                     </div>
-                                    by <a href="08-profile-page.html">Cryptoki</a>, March 4th, 2021
+                                    by <Link to="08-profile-page.html">Cryptoki</Link>, March 4th, 2021
                                 </div>
-                                <div class="news-title h5"><a href="15-blog-post-sidebar.html">What’s ETH? An in-depth view of the
+                                <div class="news-title h5"><Link to="15-blog-post-sidebar.html">What’s ETH? An in-depth view of the
                                     currency used
-                                    in the market</a></div>
+                                    in the market</Link></div>
                                 <div class="news-excerpt">A cryptocurrency is a digital asset designed to work as a medium of exchange
                                     wherein individual coin ownership records...</div>
                                 <div class="read-more-link">
-                                    <a href="15-blog-post-sidebar.html">Read More<svg class="crumina-icon">
+                                    <Link to="15-blog-post-sidebar.html">Read More<svg class="crumina-icon">
                                         <use xlinkHref="#arrow-right2-icon"></use>
-                                    </svg></a>
+                                    </svg></Link>
                                 </div>
                             </div>
                         </div>

@@ -11,6 +11,7 @@ import avatar3 from './avatar-3.png';
 import avatar10 from './avatar-10.png';
 import avatar15 from './avatar-15.png';
 import avatar14 from './avatar-14.png';
+import avatarUpload from './content/profile/avatar-upload.png';
 
 import sliderImg1 from './content/slider/slider-img-1.png';
 import sliderImg2 from './content/slider/slider-img-2.png';
@@ -59,6 +60,25 @@ import product2 from "./content/product-img/product-2.jpg";
 
 import productLarge1 from "./content/product-img/product-1-large.png";
 
+import profileCover1 from "./content/profile/profile-cover-1.png";
+
+import usFlag from "./content/profile/us-flag.png";
+
+import creatorCover1 from "./content/creators/creator-cover-1.png";
+
+import artwork1 from "./content/artworks/artwork-1.png";
+import artwork2 from "./content/artworks/artwork-2.png";
+import artwork3 from "./content/artworks/artwork-3.png";
+import artwork4 from "./content/artworks/artwork-4.png";
+import artwork5 from "./content/artworks/artwork-5.png";
+import artwork6 from "./content/artworks/artwork-6.png";
+import artwork7 from "./content/artworks/artwork-7.png";
+
+import walletIcon1 from './content/wallet/icon-1.png';
+import walletIcon2 from './content/wallet/icon-2.png';
+import walletIcon3 from './content/wallet/icon-3.png';
+import walletIcon4 from './content/wallet/icon-4.png';
+
 export {
     notiThunb1,
     notiThunb2,
@@ -105,5 +125,20 @@ export {
     product2,
     avatar4,
     avatar14,
-    productLarge1
+    productLarge1,
+    profileCover1,
+    usFlag,
+    creatorCover1,
+    artwork1,
+    artwork2,
+    artwork3,
+    artwork4,
+    artwork5,
+    artwork6,
+    artwork7,
+    walletIcon1,
+    walletIcon2,
+    walletIcon3,
+    walletIcon4,
+    avatarUpload
 };

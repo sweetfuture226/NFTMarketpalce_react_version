@@ -54,14 +54,14 @@ const Footer = () => {
                             <ul class="footer-menu">
                                 <li class="menu-item"><Link class="menu-link" to="/">Home</Link></li>
                                 <li class="menu-item"><Link class="menu-link" to="/explore">Explore</Link></li>
-                                <li class="menu-item"><Link class="menu-link" to="10-creators.html">Creators</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="/creator">Creators</Link></li>
                                 <li class="menu-item"><Link class="menu-link" to="11-collectors.html">Collectors</Link></li>
-                                <li class="menu-item"><Link class="menu-link" to="16-spotlight.html">Spotlight</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="/spotlight">Spotlight</Link></li>
                             </ul>
                             <ul class="footer-menu">
-                                <li class="menu-item"><Link class="menu-link" to="08-profile-page.html">Profile Page</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="/profile-page">Profile Page</Link></li>
                                 <li class="menu-item"><Link class="menu-link" to="03-explore-v2.html">Artwork Page</Link></li>
-                                <li class="menu-item"><Link class="menu-link" to="17-activity.html">Activity</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="/activity">Activity</Link></li>
                                 <li class="menu-item"><Link class="menu-link" to="26-upload-artwork.html">Upload Art</Link></li>
                             </ul>
                         </div>
@@ -85,7 +85,7 @@ const Footer = () => {
                         <ul class="footer-menu">
                             <li class="menu-item"><Link class="menu-link" to="13-blog-classic.html">Our Blog</Link></li>
                             <li class="menu-item"><Link class="menu-link" to="24-become-a-creator.html">Become a Creator</Link></li>
-                            <li class="menu-item"><Link class="menu-link" to="19-faq.html">FAQs</Link></li>
+                            <li class="menu-item"><Link class="menu-link" to="/faq">FAQs</Link></li>
                             <li class="menu-item"><Link class="menu-link" to="!#">About Us</Link></li>
                             <li class="menu-item"><Link class="menu-link" to="20-contact.html">Contact</Link></li>
                         </ul>

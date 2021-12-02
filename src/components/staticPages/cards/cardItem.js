@@ -25,7 +25,7 @@ const CardItem = ({count, img1, img2, heading, subHeading, currBid }) => {
                         <div class="title"> <Link to="/product-page">{heading}</Link></div>
                         <div class="item-meta">
                             <span class="avatar box-26">
-                                <Link to="08-profile-page.html">
+                                <Link to="/profile-page">
                                     <picture>
                                         <img src={img2} alt="avatar" loading="lazy" width="100" height="100" />
                                     </picture>

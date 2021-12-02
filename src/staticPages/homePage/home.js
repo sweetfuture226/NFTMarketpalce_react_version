@@ -31,7 +31,7 @@ const Home = () => {
                                     <div class="item-info">
                                         <div class="item-meta">
                                             <span class="avatar box-26">
-                                                <Link to="08-profile-page.html">
+                                                <Link to="/profile-page">
                                                     <picture>
                                                         <img
                                                             src={avatar}
@@ -113,7 +113,7 @@ const Home = () => {
                                     <div class="item-info">
                                         <div class="item-meta">
                                             <span class="avatar box-26">
-                                                <Link to="08-profile-page.html">
+                                                <Link to="/profile-page">
                                                     <picture>
                                                         <img
                                                             src={avatar}
@@ -218,7 +218,7 @@ const Home = () => {
                             <div class="creator-number">01</div>
                             <div class="creator-box">
                                 <div class="avatar box-64">
-                                    <Link to="08-profile-page.html">
+                                    <Link to="/profile-page">
                                         <picture>
                                             <img src={avatar} alt="avatar" loading="lazy" width="100" height="100" />
                                         </picture>
@@ -227,7 +227,7 @@ const Home = () => {
                                         </svg></span></Link>
                                 </div>
                                 <div class="creator-meta">
-                                    <div class="title"><Link to="08-profile-page.html">Dexter Stark</Link></div>
+                                    <div class="title"><Link to="/profile-page">Dexter Stark</Link></div>
                                     <div class="creator-meta">@DexterStark</div>
                                 </div>
                             </div>
@@ -264,13 +264,13 @@ const Home = () => {
                             <div class="creator-number">02</div>
                             <div class="creator-box">
                                 <div class="avatar box-64">
-                                    <Link to="08-profile-page.html">
+                                    <Link to="/profile-page">
                                         <img src={avatar2} width="52" height="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
                                             <use xlinkHref="#check-icon"></use>
                                         </svg></span></Link>
                                 </div>
                                 <div class="creator-meta">
-                                    <div class="title"><Link to="08-profile-page.html">Jackie Jones</Link></div>
+                                    <div class="title"><Link to="/profile-page">Jackie Jones</Link></div>
                                     <div class="creator-meta">@JackieJ</div>
                                 </div>
                             </div>
@@ -307,13 +307,13 @@ const Home = () => {
                             <div class="creator-number">03</div>
                             <div class="creator-box">
                                 <div class="avatar box-64">
-                                    <Link to="08-profile-page.html">
+                                    <Link to="/profile-page">
                                         <img src={avatar5} height="52" width="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
                                             <use xlinkHref="#check-icon"></use>
                                         </svg></span></Link>
                                 </div>
                                 <div class="creator-meta">
-                                    <div class="title"><Link to="08-profile-page.html">Noir Artworks</Link></div>
+                                    <div class="title"><Link to="/profile-page">Noir Artworks</Link></div>
                                     <div class="creator-meta">@noirArtks</div>
                                 </div>
                             </div>
@@ -349,13 +349,13 @@ const Home = () => {
                             <div class="creator-number">04</div>
                             <div class="creator-box">
                                 <div class="avatar box-64">
-                                    <Link to="08-profile-page.html">
+                                    <Link to="/profile-page">
                                         <img src={avatar3} height="52" width="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
                                             <use xlinkHref="#check-icon"></use>
                                         </svg></span></Link>
                                 </div>
                                 <div class="creator-meta">
-                                    <div class="title"><Link to="08-profile-page.html">The Green Goo</Link></div>
+                                    <div class="title"><Link to="/profile-page">The Green Goo</Link></div>
                                     <div class="creator-meta">@daGreenGoo</div>
                                 </div>
                             </div>
@@ -379,13 +379,13 @@ const Home = () => {
                             <div class="creator-number">05</div>
                             <div class="creator-box">
                                 <div class="avatar box-64">
-                                    <Link to="08-profile-page.html">
+                                    <Link to="/profile-page">
                                         <img src={avatar10} width="52" height="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
                                             <use xlinkHref="#check-icon"></use>
                                         </svg></span></Link>
                                 </div>
                                 <div class="creator-meta">
-                                    <div class="title"><Link to="08-profile-page.html">Nicholas Stevens</Link></div>
+                                    <div class="title"><Link to="/profile-page">Nicholas Stevens</Link></div>
                                     <div class="creator-meta">@nickstevens</div>
                                 </div>
                             </div>
@@ -408,13 +408,13 @@ const Home = () => {
                         <div class="top-creator-item">
                             <div class="creator-number">06</div>
                             <div class="creator-box">
-                                <div class="avatar box-64"><Link to="08-profile-page.html">
+                                <div class="avatar box-64"><Link to="/profile-page">
                                     <img src={avatar8} height="52" width="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
                                         <use xlinkHref="#check-icon"></use>
                                     </svg></span></Link>
                                 </div>
                                 <div class="creator-meta">
-                                    <div class="title"><Link to="08-profile-page.html">Bearded Wonder</Link></div>
+                                    <div class="title"><Link to="/profile-page">Bearded Wonder</Link></div>
                                     <div class="creator-meta">@beardedwndr</div>
                                 </div>
                             </div>
@@ -459,7 +459,7 @@ const Home = () => {
                 <div class="container section-padding">
                     <div class="section-title-wrapper">
                         <div class="section-title"><span class="gradient-text">Featured</span> Creators</div>
-                        <div class="all-items-link"><Link to="10-creators.html">Explore all Creators</Link></div>
+                        <div class="all-items-link"><Link to="/creator">Explore all Creators</Link></div>
                     </div>
                     <div class="featured-creators-box grid-2-columns">
                         <div class="featured-creators-item">
@@ -467,10 +467,10 @@ const Home = () => {
                             <div class="featured-creators-wrapper">
                                 <div class="featured-creators-info-wrapper">
                                     <div class="featured-creators-info">
-                                        <div class="title h4"><Link to="08-profile-page.html">Dexter Stark</Link></div>
+                                        <div class="title h4"><Link to="/profile-page">Dexter Stark</Link></div>
                                         <div class="item-meta">
                                             <span class="avatar box-26">
-                                                <Link to="08-profile-page.html"><img src={avatar} height="100" width="100" alt="" loading="lazy" /></Link>
+                                                <Link to="/profile-page"><img src={avatar} height="100" width="100" alt="" loading="lazy" /></Link>
                                                 <span class="verified"><svg class="crumina-icon"><use xlinkHref="#check-icon"></use></svg></span>
                                             </span>
                                             @DexterStark
@@ -535,7 +535,7 @@ const Home = () => {
                                         <Link to="05-product-page.html"><img src={projectThumb21} height="50" width="50" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box more-projects">
-                                        <Link to="08-profile-page.html"><svg class="crumina-icon"><use xlinkHref="#dots-icon"></use></svg></Link>
+                                        <Link to="/profile-page"><svg class="crumina-icon"><use xlinkHref="#dots-icon"></use></svg></Link>
                                     </div>
                                 </div>
                             </div>
@@ -545,9 +545,9 @@ const Home = () => {
                             <div class="featured-creators-wrapper">
                                 <div class="featured-creators-info-wrapper">
                                     <div class="featured-creators-info">
-                                        <div class="title h4"><Link to="08-profile-page.html">Noir Artworks</Link></div>
+                                        <div class="title h4"><Link to="/profile-page">Noir Artworks</Link></div>
                                         <div class="item-meta"><span class="avatar box-26">
-                                            <Link to="08-profile-page.html"><img src={avatar5} height="52" width="52" alt="" loading="lazy" /></Link>
+                                            <Link to="/profile-page"><img src={avatar5} height="52" width="52" alt="" loading="lazy" /></Link>
                                             <span class="verified">
                                                 <svg class="crumina-icon">
                                                     <use xlinkHref="#check-icon"></use>
@@ -610,7 +610,7 @@ const Home = () => {
                                         <Link to="05-product-page.html"><img src={projectThumb22} height="50" width="50" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box more-projects">
-                                        <Link to="08-profile-page.html"><svg class="crumina-icon"><use xlinkHref="#dots-icon"></use></svg></Link>
+                                        <Link to="/profile-page"><svg class="crumina-icon"><use xlinkHref="#dots-icon"></use></svg></Link>
                                     </div>
                                 </div>
                             </div>
@@ -644,7 +644,7 @@ const Home = () => {
                                     <div class="news-tags">
                                         <span class="tag-item"><Link>Guides</Link></span>
                                     </div>
-                                    by <Link to="08-profile-page.html">Cryptoki</Link>, March 26th, 2021
+                                    by <Link to="/profile-page">Cryptoki</Link>, March 26th, 2021
                                 </div>
                                 <div class="news-title h5"><Link to="15-blog-post-sidebar.html">We explain with details everything you need
                                     to know
@@ -670,7 +670,7 @@ const Home = () => {
                                         <span class="tag-item"><Link>Guides</Link></span>
                                         <span class="tag-item"><Link>News</Link></span>
                                     </div>
-                                    by <Link to="08-profile-page.html">Marina Valentine</Link>, March 13th, 2021
+                                    by <Link to="/profile-page">Marina Valentine</Link>, March 13th, 2021
                                 </div>
                                 <div class="news-title h5"><Link to="15-blog-post-sidebar.html">Here’s a quick guide about how to make
                                     money
@@ -695,7 +695,7 @@ const Home = () => {
                                     <div class="news-tags">
                                         <span class="tag-item"><Link>Currencies</Link></span>
                                     </div>
-                                    by <Link to="08-profile-page.html">Cryptoki</Link>, March 4th, 2021
+                                    by <Link to="/profile-page">Cryptoki</Link>, March 4th, 2021
                                 </div>
                                 <div class="news-title h5"><Link to="15-blog-post-sidebar.html">What’s ETH? An in-depth view of the
                                     currency used

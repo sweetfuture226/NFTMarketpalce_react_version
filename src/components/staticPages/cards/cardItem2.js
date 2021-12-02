@@ -14,7 +14,7 @@ const CardItem2 = ({img1, img2, heading, currBid, likes }) => {
                         </svg></span><span class="js-countdown" data-timer="116400"
                             data-labels="d : , h : , m : , s"></span></div>
                         <div class="title"><Link href="/product-page">{heading}</Link></div>
-                        <div class="item-meta"><span class="avatar box-26"><Link href="08-profile-page.html"><img
+                        <div class="item-meta"><span class="avatar box-26"><Link href="/profile-page"><img
                             src={img2} alt="" /></Link><span class="verified"><svg class="crumina-icon">
                                 <use xlinkHref="#check-icon"></use>
                             </svg></span></span>

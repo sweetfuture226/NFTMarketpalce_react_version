@@ -43,7 +43,7 @@ const ProductPage = () => {
                             </div>
                             <div class="avatar-block">
                                 <div class="avatar box-42">
-                                    <Link to="08-profile-page.html">
+                                    <Link to="/profile-page">
                                         <img src={avatar} alt="avatar" />
                                     </Link>
                                     <span class="verified">
@@ -55,7 +55,7 @@ const ProductPage = () => {
                                 <div class="avatar-meta">
                                     <div class="avatar-title">
                                         <span class="gradient-text">
-                                            <Link to="08-profile-page.html">Dexter Stark</Link>
+                                            <Link to="/profile-page">Dexter Stark</Link>
                                         </span>
                                     </div>
                                     <div class="avatar-meta">@DexterStark</div>
@@ -158,7 +158,7 @@ const ProductPage = () => {
                                         <div class="placed-bid">
                                             <div class="bid-placer">
                                                 <div class="avatar box-42">
-                                                    <Link to="08-profile-page.html">
+                                                    <Link to="/profile-page">
                                                         <img src={avatar3} alt="avatar" />
                                                     </Link>
                                                 </div>
@@ -166,7 +166,7 @@ const ProductPage = () => {
                                                     <div class="bid-title">
                                                         Bid placed by{" "}
                                                         <span class="gradient-text">
-                                                            <Link to="08-profile-page.html">Crimson Ray</Link>
+                                                            <Link to="/profile-page">Crimson Ray</Link>
                                                         </span>
                                                     </div>
                                                     <div class="bid-date">03/25/2021 at 12:19pm</div>
@@ -181,7 +181,7 @@ const ProductPage = () => {
                                         <div class="placed-bid">
                                             <div class="bid-placer">
                                                 <div class="avatar box-42">
-                                                    <Link to="08-profile-page.html">
+                                                    <Link to="/profile-page">
                                                         <img src={avatar4} alt="avatar" />
                                                     </Link>
                                                 </div>
@@ -189,7 +189,7 @@ const ProductPage = () => {
                                                     <div class="bid-title">
                                                         Bid placed by{" "}
                                                         <span class="gradient-text">
-                                                            <Link to="08-profile-page.html">Jenn Art</Link>
+                                                            <Link to="/profile-page">Jenn Art</Link>
                                                         </span>
                                                     </div>
                                                     <div class="bid-date">03/25/2021 at 12:19pm</div>
@@ -204,7 +204,7 @@ const ProductPage = () => {
                                         <div class="placed-bid">
                                             <div class="bid-placer">
                                                 <div class="avatar box-42">
-                                                    <Link to="08-profile-page.html">
+                                                    <Link to="/profile-page">
                                                         <img src={avatar5} alt="avatar" />
                                                     </Link>
                                                 </div>
@@ -212,7 +212,7 @@ const ProductPage = () => {
                                                     <div class="bid-title">
                                                         Bid placed by{" "}
                                                         <span class="gradient-text">
-                                                            <Link to="08-profile-page.html">Derek Greyson</Link>
+                                                            <Link to="/profile-page">Derek Greyson</Link>
                                                         </span>
                                                     </div>
                                                     <div class="bid-date">03/25/2021 at 12:19pm</div>
@@ -282,7 +282,7 @@ const ProductPage = () => {
                                         <div class="activity-item sale">
                                             <div class="bid-placer">
                                                 <div class="avatar box-42">
-                                                    <Link to="08-profile-page.html">
+                                                    <Link to="/profile-page">
                                                         <img src={avatar} alt="avatar" />
                                                         <span class="verified">
                                                             <svg class="crumina-icon">
@@ -294,7 +294,7 @@ const ProductPage = () => {
                                                 <div class="bid-info">
                                                     <div class="bid-title">
                                                         <span class="gradient-text">
-                                                            <Link to="08-profile-page.html">Dexter Stark</Link>
+                                                            <Link to="/profile-page">Dexter Stark</Link>
                                                         </span>{" "}
                                                         sold
                                                     </div>
@@ -310,14 +310,14 @@ const ProductPage = () => {
                                         <div class="activity-item purchase">
                                             <div class="bid-placer">
                                                 <div class="avatar box-42">
-                                                    <Link to="08-profile-page.html">
+                                                    <Link to="/profile-page">
                                                         <img src={avatar14} alt="avatar" />
                                                     </Link>
                                                 </div>
                                                 <div class="bid-info">
                                                     <div class="bid-title">
                                                         <span class="gradient-text">
-                                                            <Link to="08-profile-page.html">Derek Greyson</Link>
+                                                            <Link to="/profile-page">Derek Greyson</Link>
                                                         </span>{" "}
                                                         purchased
                                                     </div>
@@ -333,7 +333,7 @@ const ProductPage = () => {
                                         <div class="activity-item listing">
                                             <div class="bid-placer">
                                                 <div class="avatar box-42">
-                                                    <Link to="08-profile-page.html">
+                                                    <Link to="/profile-page">
                                                         <img src={avatar2} alt="avatar" />
                                                         <span class="verified">
                                                             <svg class="crumina-icon">
@@ -345,7 +345,7 @@ const ProductPage = () => {
                                                 <div class="bid-info">
                                                     <div class="bid-title">
                                                         <span class="gradient-text">
-                                                            <Link to="08-profile-page.html">Jackie Jones</Link>
+                                                            <Link to="/profile-page">Jackie Jones</Link>
                                                         </span>{" "}
                                                         listed
                                                     </div>

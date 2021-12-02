@@ -14,9 +14,9 @@ const CardItem4 = ({ img1, img2, count, creator, heading, currBid }) => {
                     <div class="featured-item-author">
                         <div class="title"><a href="/product-page">{heading}</a></div>
                         <div class="item-meta"><span class="gradient-text"><a
-                            href="08-profile-page.html">{creator}</a></span></div>
+                            href="/profile-page">{creator}</a></span></div>
                     </div>
-                    <div class="avatar box-42"><a href="08-profile-page.html"><img src={img2} alt="" /></a>
+                    <div class="avatar box-42"><a href="/profile-page"><img src={img2} alt="" /></a>
                         <span class="verified"><svg class="crumina-icon">
                             <use xlinkHref="#check-icon"></use>
                         </svg></span>

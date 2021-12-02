@@ -24,14 +24,14 @@ const CardItem3 = ({ img1, img2, bidReplaced,edition, creator, heading, currBid,
                     <div class="item-meta">
                         <div class="creator-box">
                             <div class="creator-info">
-                                <div class="avatar box-26"><Link href="08-profile-page.html"><img src={img2}
+                                <div class="avatar box-26"><Link href="/profile-page"><img src={img2}
                                     alt="" /></Link><span class="verified"><svg class="crumina-icon">
                                         <use xlinkHref="#check-icon"></use>
                                     </svg></span>
                                 </div>
                                 <div class="creator-meta">
                                     <div class="creator-label">CREATOR</div>
-                                    <div class="creator-name"><Link href="08-profile-page.html">{creator}</Link></div>
+                                    <div class="creator-name"><Link href="/profile-page">{creator}</Link></div>
                                 </div>
                             </div>
                             <div class="featured-item-pricebox">
@@ -45,7 +45,7 @@ const CardItem3 = ({ img1, img2, bidReplaced,edition, creator, heading, currBid,
                 <div class="item-meta">
                     <div class="creator-box">
                         <div class="creator-info">
-                            <div class="avatar box-26"><Link href="08-profile-page.html"><img src={img3}
+                            <div class="avatar box-26"><Link href="/profile-page"><img src={img3}
                                 alt="" /></Link><span class="verified"><svg class="crumina-icon">
                                     <use xlinkHref="#check-icon"></use>
                                 </svg></span>

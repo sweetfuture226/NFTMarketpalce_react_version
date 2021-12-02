@@ -69,7 +69,7 @@ const ProductPageV3 = () => {
               <div class="small-title">Creator</div>
               <div class="product-author avatar-block">
                 <div class="avatar box-42">
-                  <a href="08-profile-page.html">
+                  <a href="/profile-page">
                     <img src={avatar} alt="avatar" />
                   </a>
                   <span class="verified">
@@ -81,7 +81,7 @@ const ProductPageV3 = () => {
                 <div class="avatar-meta">
                   <div class="avatar-title">
                     <span class="gradient-text">
-                      <a href="08-profile-page.html">Dexter Stark</a>
+                      <a href="/profile-page">Dexter Stark</a>
                     </span>
                   </div>
                   <div class="avatar-meta">@DexterStark</div>
@@ -169,7 +169,7 @@ const ProductPageV3 = () => {
               <div class="placed-bid">
                 <div class="bid-placer">
                   <div class="avatar box-42">
-                    <a href="08-profile-page.html">
+                    <a href="/profile-page">
                       <img src={avatar3} alt="avatar" />
                     </a>
                   </div>
@@ -177,7 +177,7 @@ const ProductPageV3 = () => {
                     <div class="bid-title">
                       Bid placed by{" "}
                       <span class="gradient-text">
-                        <a href="08-profile-page.html">Crimson Ray</a>
+                        <a href="/profile-page">Crimson Ray</a>
                       </span>
                     </div>
                     <div class="bid-date">03/25/2021 at 12:19pm</div>
@@ -191,7 +191,7 @@ const ProductPageV3 = () => {
               <div class="placed-bid">
                 <div class="bid-placer">
                   <div class="avatar box-42">
-                    <a href="08-profile-page.html">
+                    <a href="/profile-page">
                       <img src={avatar4} alt="avatar" />
                     </a>
                   </div>
@@ -199,7 +199,7 @@ const ProductPageV3 = () => {
                     <div class="bid-title">
                       Bid placed by{" "}
                       <span class="gradient-text">
-                        <a href="08-profile-page.html">Jenn Art</a>
+                        <a href="/profile-page">Jenn Art</a>
                       </span>
                     </div>
                     <div class="bid-date">03/25/2021 at 12:19pm</div>
@@ -213,7 +213,7 @@ const ProductPageV3 = () => {
               <div class="placed-bid">
                 <div class="bid-placer">
                   <div class="avatar box-42">
-                    <a href="08-profile-page.html">
+                    <a href="/profile-page">
                       <img src={avatar5} alt="avatar" />
                     </a>
                   </div>
@@ -221,7 +221,7 @@ const ProductPageV3 = () => {
                     <div class="bid-title">
                       Bid placed by{" "}
                       <span class="gradient-text">
-                        <a href="08-profile-page.html">Derek Greyson</a>
+                        <a href="/profile-page">Derek Greyson</a>
                       </span>
                     </div>
                     <div class="bid-date">03/25/2021 at 12:19pm</div>
@@ -238,7 +238,7 @@ const ProductPageV3 = () => {
               <div class="placed-bid">
                 <div class="bid-placer">
                   <div class="avatar box-42">
-                    <a href="08-profile-page.html">
+                    <a href="/profile-page">
                       <img src={avatar3} alt="avatar" />
                     </a>
                   </div>
@@ -246,7 +246,7 @@ const ProductPageV3 = () => {
                     <div class="bid-title">
                       Bid placed by{" "}
                       <span class="gradient-text">
-                        <a href="08-profile-page.html">Crimson Ray</a>
+                        <a href="/profile-page">Crimson Ray</a>
                       </span>
                     </div>
                     <div class="bid-date">03/25/2021 at 12:19pm</div>
@@ -260,7 +260,7 @@ const ProductPageV3 = () => {
               <div class="placed-bid">
                 <div class="bid-placer">
                   <div class="avatar box-42">
-                    <a href="08-profile-page.html">
+                    <a href="/profile-page">
                       <img src={avatar4} alt="avatar" />
                     </a>
                   </div>
@@ -268,7 +268,7 @@ const ProductPageV3 = () => {
                     <div class="bid-title">
                       Bid placed by{" "}
                       <span class="gradient-text">
-                        <a href="08-profile-page.html">Jenn Art</a>
+                        <a href="/profile-page">Jenn Art</a>
                       </span>
                     </div>
                     <div class="bid-date">03/25/2021 at 12:19pm</div>
@@ -282,7 +282,7 @@ const ProductPageV3 = () => {
               <div class="placed-bid">
                 <div class="bid-placer">
                   <div class="avatar box-42">
-                    <a href="08-profile-page.html">
+                    <a href="/profile-page">
                       <img src={avatar5} alt="avatar" />
                     </a>
                   </div>
@@ -290,7 +290,7 @@ const ProductPageV3 = () => {
                     <div class="bid-title">
                       Bid placed by{" "}
                       <span class="gradient-text">
-                        <a href="08-profile-page.html">Derek Greyson</a>
+                        <a href="/profile-page">Derek Greyson</a>
                       </span>
                     </div>
                     <div class="bid-date">03/25/2021 at 12:19pm</div>
@@ -304,7 +304,7 @@ const ProductPageV3 = () => {
               <div class="placed-bid">
                 <div class="bid-placer">
                   <div class="avatar box-42">
-                    <a href="08-profile-page.html">
+                    <a href="/profile-page">
                       <img src={avatar} alt="avatar" />
                     </a>
                   </div>
@@ -312,7 +312,7 @@ const ProductPageV3 = () => {
                     <div class="bid-title">
                       Artwork listed by{" "}
                       <span class="gradient-text">
-                        <a href="08-profile-page.html">Dexter Stark</a>
+                        <a href="/profile-page">Dexter Stark</a>
                       </span>
                     </div>
                     <div class="bid-date">03/25/2021 at 12:19pm</div>

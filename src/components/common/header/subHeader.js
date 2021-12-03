@@ -45,7 +45,7 @@ const SubHeader = () => {
             </Link>
           </li>
           <li class="menu-item">
-            <Link class="menu-link" to="11-collectors.html">
+            <Link class="menu-link" to="/creator">
               Collectors
             </Link>
           </li>
@@ -192,12 +192,12 @@ const SubHeader = () => {
                         </Link>
                       </li>
                       <li class="menu-item">
-                        <Link to="26-upload-artwork.html" class="menu-link">
+                        <Link to="/upload-artwork" class="menu-link">
                           Upload artwork
                         </Link>
                       </li>
                       <li class="menu-item">
-                        <Link to="25-notifications.html" class="menu-link">
+                        <Link to="/notification" class="menu-link">
                           Notifications
                         </Link>
                       </li>
@@ -224,12 +224,12 @@ const SubHeader = () => {
                         </Link>
                       </li>
                       <li class="menu-item">
-                        <Link to="11-collectors.html" class="menu-link">
+                        <Link to="/creator" class="menu-link">
                           Collectors
                         </Link>
                       </li>
                       <li class="menu-item">
-                        <Link to="24-become-a-creator.html" class="menu-link">
+                        <Link to="/become-a-creator" class="menu-link">
                           Become a creator
                         </Link>
                       </li>
@@ -299,7 +299,7 @@ const SubHeader = () => {
                 </Link>
               </li>
               <li class="menu-item">
-                <Link to="24-become-a-creator.html" class="menu-link">
+                <Link to="/become-a-creator" class="menu-link">
                   Become a Creator
                 </Link>
               </li>

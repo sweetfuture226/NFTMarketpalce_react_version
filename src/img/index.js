@@ -79,6 +79,20 @@ import walletIcon2 from './content/wallet/icon-2.png';
 import walletIcon3 from './content/wallet/icon-3.png';
 import walletIcon4 from './content/wallet/icon-4.png';
 
+import becameCreator from './content/creators/become-creator.png';
+
+import notiThumb4 from './content/notifications/notif-thumb-4.png';
+import notiThumb5 from './content/notifications/notif-thumb-5.png';
+
+import footerImg1 from './content/before-footer/before-footer-img1.png';
+import footerImg2 from './content/before-footer/before-footer-img2.png';
+import footerImg3 from './content/before-footer/before-footer-img3.png';
+import footerImg4 from './content/before-footer/before-footer-img4.png';
+import footerImg5 from './content/before-footer/before-footer-img5.png';
+import footerImg6 from './content/before-footer/before-footer-img6.png';
+import footerImg7 from './content/before-footer/before-footer-img7.png';
+import footerImg8 from './content/before-footer/before-footer-img8.png';
+
 export {
     notiThunb1,
     notiThunb2,
@@ -140,5 +154,16 @@ export {
     walletIcon2,
     walletIcon3,
     walletIcon4,
-    avatarUpload
+    avatarUpload,
+    becameCreator,
+    notiThumb4,
+    notiThumb5,
+    footerImg1,
+    footerImg2,
+    footerImg3,
+    footerImg4,
+    footerImg5,
+    footerImg6,
+    footerImg7,
+    footerImg8
 };

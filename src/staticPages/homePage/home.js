@@ -4,6 +4,9 @@ import Header from "./../../components/common/header/header";
 import Footer from './../../components/common/footer/footer';
 import CardItem from './../../components/staticPages/cards/cardItem';
 import { Link } from "react-router-dom";
+import SwipeSlider from "../../components/staticPages/sliders/swipeSlider";
+import TopCreatorCard from "../../components/staticPages/cards/topCreatorCard";
+import BlogCard from './../../components/staticPages/blog/blogCard';
 
 const Home = () => {
     return (
@@ -16,66 +19,7 @@ const Home = () => {
                     <div id="homeSlider" class="swiper">
                         <div class="swiper-wrapper">
                             <div id="slide-1" class="swiper-slide">
-                                <picture>
-                                    <img
-                                        src={sliderImg3}
-                                        width="940"
-                                        height="640"
-                                        alt="SlideImage"
-                                        loading="lazy"
-                                    />
-                                </picture>
-
-                                <div class="dark-overlay"></div>
-                                <div class="slide-content">
-                                    <div class="item-info">
-                                        <div class="item-meta">
-                                            <span class="avatar box-26">
-                                                <Link to="/profile-page">
-                                                    <picture>
-                                                        <img
-                                                            src={avatar}
-                                                            alt="avatar"
-                                                            loading="lazy"
-                                                            width="100"
-                                                            height="100"
-                                                        />
-                                                    </picture>
-                                                </Link>
-                                                <span class="verified">
-                                                    <svg class="crumina-icon">
-                                                        <use xlinkHref="#check-icon"></use>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                            @DexterStark
-                                        </div>
-                                        <div class="title slide-title">Lost in Illustration</div>
-                                        <div class="item-bid-section">
-                                            <div class="bid-item">
-                                                <div class="label">Current bid</div>
-                                                <div class="value">2.31 ETH</div>
-                                            </div>
-                                            <div class="bid-item">
-                                                <div class="label">AUCTION ENDING IN</div>
-                                                <div class="countdown">
-                                                    <div class="value">
-                                                        <span
-                                                            class="js-countdown"
-                                                            data-timer="19560"
-                                                            data-labels="d : , h : , m : , s"
-                                                        ></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gradient-border_white-bg slide-button">
-                                                <Link class="btn btn-normal" to="05-product-page.html">
-                                                    Go to Item!
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <SwipeSlider img1={sliderImg3} img2={avatar} username="@DexterStark" heading="Lost in Illustration" currBid="2.31 ETH" />
                             </div>
                             <div id="slide-2" class="swiper-slide slide-content-align-right">
                                 <picture>
@@ -99,68 +43,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div id="slide-3" class="swiper-slide">
-                                <picture>
-                                    <img
-                                        src={sliderImg2}
-                                        width="940"
-                                        height="640"
-                                        alt="SlideImage"
-                                        loading="lazy"
-                                    />
-                                </picture>
-                                <div class="dark-overlay"></div>
-                                <div class="slide-content">
-                                    <div class="item-info">
-                                        <div class="item-meta">
-                                            <span class="avatar box-26">
-                                                <Link to="/profile-page">
-                                                    <picture>
-                                                        <img
-                                                            src={avatar}
-                                                            alt="avatar"
-                                                            loading="lazy"
-                                                            width="100"
-                                                            height="100"
-                                                        />
-                                                    </picture>
-                                                </Link>
-                                                <span class="verified">
-                                                    <svg class="crumina-icon">
-                                                        <use xlinkHref="#check-icon"></use>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                            @DexterStark
-                                        </div>
-                                        <div class="title slide-title">Breathing Nature</div>
-                                        <div class="item-bid-section">
-                                            <div class="bid-item">
-                                                <div class="label">Current bid</div>
-                                                <div class="value">2.31 ETH</div>
-                                            </div>
-                                            <div class="bid-item">
-                                                <div class="label">AUCTION ENDING IN</div>
-                                                <div class="countdown">
-                                                    <div class="value">
-                                                        <span
-                                                            class="js-countdown"
-                                                            data-timer="19353"
-                                                            data-labels="d : , h : , m : , s"
-                                                        ></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gradient-border_dark-bg slide-button">
-                                                <Link
-                                                    class="btn btn-normal"
-                                                    to="06-product-page-v2.html"
-                                                >
-                                                    Go to Item!
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <SwipeSlider img1={sliderImg2} img2={avatar} username="@DexterStark" heading="Breathing Nature" currBid="2.31 ETH" />
                             </div>
                         </div>
                         <div class="homeslider-nav">
@@ -214,226 +97,12 @@ const Home = () => {
                         <div class="section-title">Top <span class="gradient-text">Creators</span></div>
                     </div>
                     <div class="top-creators-box grid-2-columns">
-                        <div class="top-creator-item">
-                            <div class="creator-number">01</div>
-                            <div class="creator-box">
-                                <div class="avatar box-64">
-                                    <Link to="/profile-page">
-                                        <picture>
-                                            <img src={avatar} alt="avatar" loading="lazy" width="100" height="100" />
-                                        </picture>
-                                        <span class="verified"><svg class="crumina-icon">
-                                            <use xlinkHref="#check-icon"></use>
-                                        </svg></span></Link>
-                                </div>
-                                <div class="creator-meta">
-                                    <div class="title"><Link to="/profile-page">Dexter Stark</Link></div>
-                                    <div class="creator-meta">@DexterStark</div>
-                                </div>
-                            </div>
-                            <div class="projects-score">
-                                <div class="number title">135</div>
-                                <div class="label">Created</div>
-                            </div>
-                            <div class="projects-previews">
-                                <div class="preview-box box-68">
-                                    <Link to="05-product-page.html">
-                                        <picture>
-                                            <img src={projectThumb1} height="68" width="68" alt="" loading="lazy" />
-                                        </picture>
-
-                                    </Link>
-                                </div>
-                                <div class="preview-box box-68">
-                                    <Link to="06-product-page-v2.html">
-                                        <picture>
-                                            <img src={projectThumb2} height="66" width="66" alt="" loading="lazy" />
-                                        </picture>
-                                    </Link>
-                                </div>
-                                <div class="preview-box box-68">
-                                    <Link to="/product-page-v3">
-                                        <picture>
-                                            <img src={projectThumb3} height="68" width="68" alt="" loading="lazy" />
-                                        </picture>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="top-creator-item">
-                            <div class="creator-number">02</div>
-                            <div class="creator-box">
-                                <div class="avatar box-64">
-                                    <Link to="/profile-page">
-                                        <img src={avatar2} width="52" height="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
-                                            <use xlinkHref="#check-icon"></use>
-                                        </svg></span></Link>
-                                </div>
-                                <div class="creator-meta">
-                                    <div class="title"><Link to="/profile-page">Jackie Jones</Link></div>
-                                    <div class="creator-meta">@JackieJ</div>
-                                </div>
-                            </div>
-                            <div class="projects-score">
-                                <div class="number title">107</div>
-                                <div class="label">Created</div>
-                            </div>
-                            <div class="projects-previews">
-                                <div class="preview-box box-68">
-                                    <Link to="05-product-page.html">
-                                        <picture>
-                                            <img src={projectThumb5} height="68" width="68" alt="" loading="lazy" />
-                                        </picture>
-                                    </Link>
-                                </div>
-                                <div class="preview-box box-68">
-                                    <Link to="06-product-page-v2.html">
-                                        <picture>
-                                            <img src={projectThumb9} height="74" width="74" alt="" loading="lazy" />
-                                        </picture>
-
-                                    </Link>
-                                </div>
-                                <div class="preview-box box-68">
-                                    <Link to="/product-page-v3">
-                                        <picture>
-                                            <img src={projectThumb10} height="68" width="68" alt="" loading="lazy" />
-                                        </picture>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="top-creator-item">
-                            <div class="creator-number">03</div>
-                            <div class="creator-box">
-                                <div class="avatar box-64">
-                                    <Link to="/profile-page">
-                                        <img src={avatar5} height="52" width="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
-                                            <use xlinkHref="#check-icon"></use>
-                                        </svg></span></Link>
-                                </div>
-                                <div class="creator-meta">
-                                    <div class="title"><Link to="/profile-page">Noir Artworks</Link></div>
-                                    <div class="creator-meta">@noirArtks</div>
-                                </div>
-                            </div>
-                            <div class="projects-score">
-                                <div class="number title">94</div>
-                                <div class="label">Created</div>
-                            </div>
-                            <div class="projects-previews">
-                                <div class="preview-box box-68">
-                                    <Link to="05-product-page.html">
-                                        <picture>
-                                            <img src={projectThumb4} height="68" width="68" alt="" loading="lazy" />
-                                        </picture>
-                                    </Link>
-                                </div>
-                                <div class="preview-box box-68">
-                                    <Link to="06-product-page-v2.html">
-                                        <picture>
-                                            <img src={projectThumb11} height="68" width="68" alt="" loading="lazy" />
-                                        </picture>
-                                    </Link>
-                                </div>
-                                <div class="preview-box box-68">
-                                    <Link to="/product-page-v3">
-                                        <picture>
-                                            <img src={projectThumb12} height="68" width="68" alt="" loading="lazy" />
-                                        </picture>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="top-creator-item">
-                            <div class="creator-number">04</div>
-                            <div class="creator-box">
-                                <div class="avatar box-64">
-                                    <Link to="/profile-page">
-                                        <img src={avatar3} height="52" width="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
-                                            <use xlinkHref="#check-icon"></use>
-                                        </svg></span></Link>
-                                </div>
-                                <div class="creator-meta">
-                                    <div class="title"><Link to="/profile-page">The Green Goo</Link></div>
-                                    <div class="creator-meta">@daGreenGoo</div>
-                                </div>
-                            </div>
-                            <div class="projects-score">
-                                <div class="number title">83</div>
-                                <div class="label">Created</div>
-                            </div>
-                            <div class="projects-previews">
-                                <div class="preview-box box-68">
-                                    <Link to="05-product-page.html"><img src={projectThumb13} height="68" width="68" alt="" loading="lazy" /></Link>
-                                </div>
-                                <div class="preview-box box-68">
-                                    <Link to="06-product-page-v2.html"><img src={projectThumb14} height="68" width="68" alt="" loading="lazy" /></Link>
-                                </div>
-                                <div class="preview-box box-68">
-                                    <Link to="/product-page-v3"><img src={projectThumb8} height="74" width="74" alt="" loading="lazy" /></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="top-creator-item">
-                            <div class="creator-number">05</div>
-                            <div class="creator-box">
-                                <div class="avatar box-64">
-                                    <Link to="/profile-page">
-                                        <img src={avatar10} width="52" height="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
-                                            <use xlinkHref="#check-icon"></use>
-                                        </svg></span></Link>
-                                </div>
-                                <div class="creator-meta">
-                                    <div class="title"><Link to="/profile-page">Nicholas Stevens</Link></div>
-                                    <div class="creator-meta">@nickstevens</div>
-                                </div>
-                            </div>
-                            <div class="projects-score">
-                                <div class="number title">50</div>
-                                <div class="label">Created</div>
-                            </div>
-                            <div class="projects-previews">
-                                <div class="preview-box box-68">
-                                    <Link to="05-product-page.html"><img src={projectThumb15} height="68" width="68" alt="" loading="lazy" /></Link>
-                                </div>
-                                <div class="preview-box box-68">
-                                    <Link to="06-product-page-v2.html"><img src={projectThumb16} height="68" width="68" alt="" loading="lazy" /></Link>
-                                </div>
-                                <div class="preview-box box-68">
-                                    <Link to="/product-page-v3"><img src={projectThumb17} height="68" width="68" alt="" loading="lazy" /></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="top-creator-item">
-                            <div class="creator-number">06</div>
-                            <div class="creator-box">
-                                <div class="avatar box-64"><Link to="/profile-page">
-                                    <img src={avatar8} height="52" width="52" alt="avatar" loading="lazy" /><span class="verified"><svg class="crumina-icon">
-                                        <use xlinkHref="#check-icon"></use>
-                                    </svg></span></Link>
-                                </div>
-                                <div class="creator-meta">
-                                    <div class="title"><Link to="/profile-page">Bearded Wonder</Link></div>
-                                    <div class="creator-meta">@beardedwndr</div>
-                                </div>
-                            </div>
-                            <div class="projects-score">
-                                <div class="number title">26</div>
-                                <div class="label">Created</div>
-                            </div>
-                            <div class="projects-previews">
-                                <div class="preview-box box-68">
-                                    <Link to="05-product-page.html"><img src={projectThumb18} height="68" width="68" alt="" loading="lazy" /></Link>
-                                </div>
-                                <div class="preview-box box-68">
-                                    <Link to="06-product-page-v2.html"><img src={projectThumb19} height="68" width="68" alt="" loading="lazy" /></Link>
-                                </div>
-                                <div class="preview-box box-68">
-                                    <Link to="/product-page-v3"><img src={projectThumb20} height="68" width="68" alt="" loading="lazy" /></Link>
-                                </div>
-                            </div>
-                        </div>
+                        <TopCreatorCard itemNo="01" img1={avatar} img2={projectThumb1} img3={projectThumb2} img4={projectThumb3} />
+                        <TopCreatorCard itemNo="02" img1={avatar} img2={projectThumb5} img3={projectThumb9} img4={projectThumb10} />
+                        <TopCreatorCard itemNo="03" img1={avatar} img2={projectThumb4} img3={projectThumb11} img4={projectThumb12} />
+                        <TopCreatorCard itemNo="04" img1={avatar} img2={projectThumb13} img3={projectThumb14} img4={projectThumb8} />
+                        <TopCreatorCard itemNo="05" img1={avatar10} img2={projectThumb15} img3={projectThumb16} img4={projectThumb17} />
+                        <TopCreatorCard itemNo="06" img1={avatar8} img2={projectThumb18} img3={projectThumb19} img4={projectThumb20} />
                     </div>
                 </div>
 
@@ -521,18 +190,18 @@ const Home = () => {
                                 </div>
                                 <div class="projects-previews">
                                     <div class="preview-box">
-                                        <Link to="05-product-page.html">
+                                        <Link to="/product-page">
                                             <img src={projectThumb1} width="68" height="68" alt="" loading="lazy" />
                                         </Link>
                                     </div>
                                     <div class="preview-box">
-                                        <Link to="06-product-page-v2.html"><img src={projectThumb2} height="66" width="66" alt="" loading="lazy" /></Link>
+                                        <Link to="/product-page-v2"><img src={projectThumb2} height="66" width="66" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box">
                                         <Link to="/product-page-v3"><img src={projectThumb3} width="68" height="68" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box">
-                                        <Link to="05-product-page.html"><img src={projectThumb21} height="50" width="50" alt="" loading="lazy" /></Link>
+                                        <Link to="/product-page"><img src={projectThumb21} height="50" width="50" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box more-projects">
                                         <Link to="/profile-page"><svg class="crumina-icon"><use xlinkHref="#dots-icon"></use></svg></Link>
@@ -598,16 +267,16 @@ const Home = () => {
                                 </div>
                                 <div class="projects-previews">
                                     <div class="preview-box">
-                                        <Link to="05-product-page.html"><img src={projectThumb4} width="68" height="68" alt="" loading="lazy" /></Link>
+                                        <Link to="/product-page"><img src={projectThumb4} width="68" height="68" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box">
-                                        <Link to="06-product-page-v2.html"><img src={projectThumb11} height="68" width="68" alt="" loading="lazy" /></Link>
+                                        <Link to="/product-page-v2"><img src={projectThumb11} height="68" width="68" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box">
                                         <Link to="/product-page-v3"><img src={projectThumb12} width="68" height="68" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box">
-                                        <Link to="05-product-page.html"><img src={projectThumb22} height="50" width="50" alt="" loading="lazy" /></Link>
+                                        <Link to="/product-page"><img src={projectThumb22} height="50" width="50" alt="" loading="lazy" /></Link>
                                     </div>
                                     <div class="preview-box more-projects">
                                         <Link to="/profile-page"><svg class="crumina-icon"><use xlinkHref="#dots-icon"></use></svg></Link>
@@ -623,7 +292,7 @@ const Home = () => {
                             <div class="h2">Become a Creator!</div>
                         </div>
                         <div class="subscribe-form">
-                            <Link to="24-become-a-creator.html" class="btn btn-normal btn-dark">Start Selling!</Link>
+                            <Link to="/become-a-creator" class="btn btn-normal btn-dark">Start Selling!</Link>
                         </div>
                     </div>
                 </div>
@@ -634,81 +303,29 @@ const Home = () => {
                         <div class="all-items-link"><Link to="12-blog-grid.html">View all Blog Posts</Link></div>
                     </div>
                     <div class="latest-news-box grid-3-columns">
-                        <div class="news-item">
-                            <div class="news-thumb">
-                                <Link to="14-blog-post-centered.html">
-                                    <img src={newsThumb1} width="460" height="260" alt="" loading="lazy" /></Link>
-                            </div>
-                            <div class="news-content">
-                                <div class="news-meta">
-                                    <div class="news-tags">
-                                        <span class="tag-item"><Link>Guides</Link></span>
-                                    </div>
-                                    by <Link to="/profile-page">Cryptoki</Link>, March 26th, 2021
-                                </div>
-                                <div class="news-title h5"><Link to="15-blog-post-sidebar.html">We explain with details everything you need
-                                    to know
-                                    about crypto art and
-                                    cryptocurrencies!</Link></div>
-                                <div class="news-excerpt">A cryptocurrency is a digital asset designed to work as a medium of exchange
-                                    wherein individual coin ownership records...</div>
-                                <div class="read-more-link">
-                                    <Link to="14-blog-post-centered.html">Read More<svg class="crumina-icon">
-                                        <use xlinkHref="#arrow-right2-icon"></use>
-                                    </svg></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-item">
-                            <div class="news-thumb">
-                                <Link to="14-blog-post-centered.html">
-                                    <img src={newsThumb2} height="260" width="460" alt="" loading="lazy" /></Link>
-                            </div>
-                            <div class="news-content">
-                                <div class="news-meta">
-                                    <div class="news-tags">
-                                        <span class="tag-item"><Link>Guides</Link></span>
-                                        <span class="tag-item"><Link>News</Link></span>
-                                    </div>
-                                    by <Link to="/profile-page">Marina Valentine</Link>, March 13th, 2021
-                                </div>
-                                <div class="news-title h5"><Link to="15-blog-post-sidebar.html">Here’s a quick guide about how to make
-                                    money
-                                    selling your artworks with
-                                    Criptoki!</Link></div>
-                                <div class="news-excerpt">A cryptocurrency is a digital asset designed to work as a medium of exchange
-                                    wherein individual coin ownership records...</div>
-                                <div class="read-more-link">
-                                    <Link to="15-blog-post-sidebar.html">Read More<svg class="crumina-icon">
-                                        <use xlinkHref="#arrow-right2-icon"></use>
-                                    </svg></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-item">
-                            <div class="news-thumb">
-                                <Link to="15-blog-post-sidebar.html">
-                                    <img src={newsThumb3} width="460" height="260" alt="" loading="lazy" /></Link>
-                            </div>
-                            <div class="news-content">
-                                <div class="news-meta">
-                                    <div class="news-tags">
-                                        <span class="tag-item"><Link>Currencies</Link></span>
-                                    </div>
-                                    by <Link to="/profile-page">Cryptoki</Link>, March 4th, 2021
-                                </div>
-                                <div class="news-title h5"><Link to="15-blog-post-sidebar.html">What’s ETH? An in-depth view of the
-                                    currency used
-                                    in the market</Link></div>
-                                <div class="news-excerpt">A cryptocurrency is a digital asset designed to work as a medium of exchange
-                                    wherein individual coin ownership records...</div>
-                                <div class="read-more-link">
-                                    <Link to="15-blog-post-sidebar.html">Read More<svg class="crumina-icon">
-                                        <use xlinkHref="#arrow-right2-icon"></use>
-                                    </svg></Link>
-                                </div>
-                            </div>
-                        </div>
+                        <BlogCard img={newsThumb1}
+                            description="A cryptocurrency is a digital asset designed to work as a medium of exchange wherein individual coin ownership records..."
+                            heading="We explain with details everything you need to know about crypto art and cryptocurrencies!"
+                            date="March 26th, 2021"
+                            username="Cryptoki"
+                            tabButtons={["Guides"]}
+                        />
+
+                        <BlogCard img={newsThumb2}
+                            description="A cryptocurrency is a digital asset designed to work as a medium of exchange wherein individual coin ownership records..."
+                            heading="Here’s a quick guide about how to make money selling your artworks with Criptoki!"
+                            date="March 13th, 2021"
+                            username="Marina Valentine"
+                            tabButtons={["Guides", "News"]}
+                        />
+
+                        <BlogCard img={newsThumb3}
+                            description="A cryptocurrency is a digital asset designed to work as a medium of exchange wherein individual coin ownership records..."
+                            heading="What’s ETH? An in-depth view of the currency used in the market"
+                            date="March 4th, 2021"
+                            username="Cryptoki"
+                            tabButtons={["Currencies"]}
+                        />
                     </div>
                 </div>
             </div>

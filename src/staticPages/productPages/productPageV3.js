@@ -1,6 +1,8 @@
 import Footer from "../../components/common/footer/footer";
 import Header from "../../components/common/header/header";
 import SubHeader from "../../components/common/header/subHeader";
+import ActivityCard from "../../components/staticPages/cards/activityCard";
+import BidCard from "../../components/staticPages/cards/bidsCard";
 import {
   avatar,
   avatar3,
@@ -166,163 +168,18 @@ const ProductPageV3 = () => {
           <div class="bids-listing-section">
             <div class="bids-list">
               <div class="small-title">Bids</div>
-              <div class="placed-bid">
-                <div class="bid-placer">
-                  <div class="avatar box-42">
-                    <a href="/profile-page">
-                      <img src={avatar3} alt="avatar" />
-                    </a>
-                  </div>
-                  <div class="bid-info">
-                    <div class="bid-title">
-                      Bid placed by{" "}
-                      <span class="gradient-text">
-                        <a href="/profile-page">Crimson Ray</a>
-                      </span>
-                    </div>
-                    <div class="bid-date">03/25/2021 at 12:19pm</div>
-                  </div>
-                </div>
-                <div class="bid-box">
-                  <div class="crypto-value">2.31 ETH</div>
-                  <div class="currency-value">125.230 U$D</div>
-                </div>
-              </div>
-              <div class="placed-bid">
-                <div class="bid-placer">
-                  <div class="avatar box-42">
-                    <a href="/profile-page">
-                      <img src={avatar4} alt="avatar" />
-                    </a>
-                  </div>
-                  <div class="bid-info">
-                    <div class="bid-title">
-                      Bid placed by{" "}
-                      <span class="gradient-text">
-                        <a href="/profile-page">Jenn Art</a>
-                      </span>
-                    </div>
-                    <div class="bid-date">03/25/2021 at 12:19pm</div>
-                  </div>
-                </div>
-                <div class="bid-box">
-                  <div class="crypto-value">2.31 ETH</div>
-                  <div class="currency-value">125.230 U$D</div>
-                </div>
-              </div>
-              <div class="placed-bid">
-                <div class="bid-placer">
-                  <div class="avatar box-42">
-                    <a href="/profile-page">
-                      <img src={avatar5} alt="avatar" />
-                    </a>
-                  </div>
-                  <div class="bid-info">
-                    <div class="bid-title">
-                      Bid placed by{" "}
-                      <span class="gradient-text">
-                        <a href="/profile-page">Derek Greyson</a>
-                      </span>
-                    </div>
-                    <div class="bid-date">03/25/2021 at 12:19pm</div>
-                  </div>
-                </div>
-                <div class="bid-box">
-                  <div class="crypto-value">2.31 ETH</div>
-                  <div class="currency-value">125.230 U$D</div>
-                </div>
-              </div>
+              <BidCard img1={avatar3} bidPlacedBy="Crimson Ray" time="03/25/2021 at 12:19pm" eth="2.31 ETH" amount="125.230 U$D" />
+              <BidCard img1={avatar4} bidPlacedBy="Jenn Art" time="03/25/2021 at 12:19pm" eth="2.31 ETH" amount="125.230 U$D" />
+              <BidCard img1={avatar5} bidPlacedBy="Derek Greyson" time="03/25/2021 at 12:19pm" eth="2.31 ETH" amount="125.230 U$D" />
             </div>
             <div class="bids-list">
               <div class="small-title">Activity</div>
-              <div class="placed-bid">
-                <div class="bid-placer">
-                  <div class="avatar box-42">
-                    <a href="/profile-page">
-                      <img src={avatar3} alt="avatar" />
-                    </a>
-                  </div>
-                  <div class="bid-info">
-                    <div class="bid-title">
-                      Bid placed by{" "}
-                      <span class="gradient-text">
-                        <a href="/profile-page">Crimson Ray</a>
-                      </span>
-                    </div>
-                    <div class="bid-date">03/25/2021 at 12:19pm</div>
-                  </div>
-                </div>
-                <div class="bid-box">
-                  <div class="crypto-value">2.31 ETH</div>
-                  <div class="currency-value">125.230 U$D</div>
-                </div>
-              </div>
-              <div class="placed-bid">
-                <div class="bid-placer">
-                  <div class="avatar box-42">
-                    <a href="/profile-page">
-                      <img src={avatar4} alt="avatar" />
-                    </a>
-                  </div>
-                  <div class="bid-info">
-                    <div class="bid-title">
-                      Bid placed by{" "}
-                      <span class="gradient-text">
-                        <a href="/profile-page">Jenn Art</a>
-                      </span>
-                    </div>
-                    <div class="bid-date">03/25/2021 at 12:19pm</div>
-                  </div>
-                </div>
-                <div class="bid-box">
-                  <div class="crypto-value">1.93 ETH</div>
-                  <div class="currency-value">118.634 U$D</div>
-                </div>
-              </div>
-              <div class="placed-bid">
-                <div class="bid-placer">
-                  <div class="avatar box-42">
-                    <a href="/profile-page">
-                      <img src={avatar5} alt="avatar" />
-                    </a>
-                  </div>
-                  <div class="bid-info">
-                    <div class="bid-title">
-                      Bid placed by{" "}
-                      <span class="gradient-text">
-                        <a href="/profile-page">Derek Greyson</a>
-                      </span>
-                    </div>
-                    <div class="bid-date">03/25/2021 at 12:19pm</div>
-                  </div>
-                </div>
-                <div class="bid-box">
-                  <div class="crypto-value">1.47 ETH</div>
-                  <div class="currency-value">90.089 U$D</div>
-                </div>
-              </div>
-              <div class="placed-bid">
-                <div class="bid-placer">
-                  <div class="avatar box-42">
-                    <a href="/profile-page">
-                      <img src={avatar} alt="avatar" />
-                    </a>
-                  </div>
-                  <div class="bid-info">
-                    <div class="bid-title">
-                      Artwork listed by{" "}
-                      <span class="gradient-text">
-                        <a href="/profile-page">Dexter Stark</a>
-                      </span>
-                    </div>
-                    <div class="bid-date">03/25/2021 at 12:19pm</div>
-                  </div>
-                </div>
-                <div class="bid-box">
-                  <div class="crypto-value">1.35 ETH</div>
-                  <div class="currency-value">80.458 U$D</div>
-                </div>
-              </div>
+
+              <BidCard img1={avatar3} bidPlacedBy="Crimson Ray" time="03/25/2021 at 12:19pm" eth="2.31 ETH" amount="125.230 U$D" />
+              <BidCard img1={avatar4} bidPlacedBy="Jenn Art" time="03/25/2021 at 12:19pm" eth="2.31 ETH" amount="125.230 U$D" />
+              <BidCard img1={avatar5} bidPlacedBy="Derek Greyson" time="03/25/2021 at 12:19pm" eth="2.31 ETH" amount="125.230 U$D" />
+             
+              <ActivityCard img1={avatar} username="Jackie Jones" time="03/25/2021 at 12:19pm" eth="2.31 ETH" amount="125.230 U$D" />
             </div>
           </div>
 
@@ -340,7 +197,7 @@ const ProductPageV3 = () => {
                 subHeading="@DexterStark"
                 currBid="4.07 ETH"
               />
-               <CardItem
+              <CardItem
                 count="22"
                 img1={featureItem1}
                 img2={avatar}
@@ -348,7 +205,7 @@ const ProductPageV3 = () => {
                 subHeading="@DexterStark"
                 currBid="4.07 ETH"
               />
-               <CardItem
+              <CardItem
                 count="22"
                 img1={featureItem1}
                 img2={avatar}
@@ -356,7 +213,7 @@ const ProductPageV3 = () => {
                 subHeading="@DexterStark"
                 currBid="4.07 ETH"
               />
-               <CardItem
+              <CardItem
                 count="22"
                 img1={featureItem1}
                 img2={avatar}

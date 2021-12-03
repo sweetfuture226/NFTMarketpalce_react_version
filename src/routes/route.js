@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, Switch, Redirect, useLocation } from "react-router-dom";
 import Explorer from "../staticPages/explorerPage/explorer";
 import Home from "../staticPages/homePage/home";
 import ItemVersion from "../staticPages/itemVersion/itemVersion";
@@ -14,8 +14,22 @@ import Activity from './../staticPages/activity/activity';
 import ConnectWallet from './../staticPages/connectWallet/connectWallet';
 import FaqPage from "../staticPages/faq/faq";
 import ProfileIntro from "../staticPages/profilePage/profileIntro";
+import BecameCreator from "../staticPages/creator/becameCreator";
+import Notification from "../staticPages/notification/notification";
+import UploadArtwork from "../staticPages/uploadArtwork/uploadArtwork";
 
 const Routes = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        // window.scrollTo(0, 0);
+        window.scroll({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      }, [pathname]);
+    
+
     return (
         <Switch>
             <Route path="/" component={Home} exact />
@@ -32,6 +46,9 @@ const Routes = () => {
             <Route path="/connect-a-wallet" component={ConnectWallet} exact />
             <Route path="/faq" component={FaqPage} exact />
             <Route path="/profile-info" component={ProfileIntro} exact />
+            <Route path="/become-a-creator" component={BecameCreator} exact />
+            <Route path="/notification" component={Notification} exact />
+            <Route path="/upload-artwork" component={UploadArtwork} exact />
             <Route path="/notFound" />
             <Redirect from="*" to="/notFound" />
         </Switch>

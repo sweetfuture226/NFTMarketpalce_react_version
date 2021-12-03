@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/common/footer/footer";
 import Header from "../../components/common/header/header";
 import SubHeader from "../../components/common/header/subHeader";
+import ActivityCard from "../../components/staticPages/cards/activityCard";
+import BidCard from "../../components/staticPages/cards/bidsCard";
 import CardItem2 from "../../components/staticPages/cards/cardItem2";
+import AdditionalDetails from "../../components/staticPages/product/additionalDetails";
 import {
     avatar,
     avatar14,
@@ -155,208 +158,23 @@ const ProductPage = () => {
 
                                 <div id="tab1" class="tab active">
                                     <div class="tab-content">
-                                        <div class="placed-bid">
-                                            <div class="bid-placer">
-                                                <div class="avatar box-42">
-                                                    <Link to="/profile-page">
-                                                        <img src={avatar3} alt="avatar" />
-                                                    </Link>
-                                                </div>
-                                                <div class="bid-info">
-                                                    <div class="bid-title">
-                                                        Bid placed by{" "}
-                                                        <span class="gradient-text">
-                                                            <Link to="/profile-page">Crimson Ray</Link>
-                                                        </span>
-                                                    </div>
-                                                    <div class="bid-date">03/25/2021 at 12:19pm</div>
-                                                </div>
-                                            </div>
-                                            <div class="bid-box">
-                                                <div class="crypto-value">2.31 ETH</div>
-                                                <div class="currency-value">125.230 U$D</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="placed-bid">
-                                            <div class="bid-placer">
-                                                <div class="avatar box-42">
-                                                    <Link to="/profile-page">
-                                                        <img src={avatar4} alt="avatar" />
-                                                    </Link>
-                                                </div>
-                                                <div class="bid-info">
-                                                    <div class="bid-title">
-                                                        Bid placed by{" "}
-                                                        <span class="gradient-text">
-                                                            <Link to="/profile-page">Jenn Art</Link>
-                                                        </span>
-                                                    </div>
-                                                    <div class="bid-date">03/25/2021 at 12:19pm</div>
-                                                </div>
-                                            </div>
-                                            <div class="bid-box">
-                                                <div class="crypto-value">2.31 ETH</div>
-                                                <div class="currency-value">125.230 U$D</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="placed-bid">
-                                            <div class="bid-placer">
-                                                <div class="avatar box-42">
-                                                    <Link to="/profile-page">
-                                                        <img src={avatar5} alt="avatar" />
-                                                    </Link>
-                                                </div>
-                                                <div class="bid-info">
-                                                    <div class="bid-title">
-                                                        Bid placed by{" "}
-                                                        <span class="gradient-text">
-                                                            <Link to="/profile-page">Derek Greyson</Link>
-                                                        </span>
-                                                    </div>
-                                                    <div class="bid-date">03/25/2021 at 12:19pm</div>
-                                                </div>
-                                            </div>
-                                            <div class="bid-box">
-                                                <div class="crypto-value">2.31 ETH</div>
-                                                <div class="currency-value">125.230 U$D</div>
-                                            </div>
-                                        </div>
+                                        <BidCard img1={avatar3} bidPlacedBy="Crimson Ray" time="03/25/2021 at 12:19pm" eth="2.31 ETH" amount="125.230 U$D" />
+                                        <BidCard img1={avatar4} bidPlacedBy="Jenn Art" time="03/25/2021 at 12:19pm" eth="2.31 ETH" amount="125.230 U$D" />
+                                        <BidCard img1={avatar5} bidPlacedBy="Derek Greyson" time="03/25/2021 at 12:19pm" eth="2.31 ETH" amount="125.230 U$D" />
                                     </div>
                                 </div>
 
                                 <div id="tab2" class="tab">
                                     <div class="tab-content">
-                                        <div class="product-description">
-                                            <ul class="details-list">
-                                                <li>
-                                                    <svg class="crumina-icon bullet-icon">
-                                                        <use xlinkHref="#circle-icon"></use>
-                                                    </svg>
-                                                    <span class="detail-label">Size</span>
-                                                    <span class="bold">5000 x 3500px (37MB)</span>
-                                                </li>
-                                                <li>
-                                                    <svg class="crumina-icon bullet-icon">
-                                                        <use xlinkHref="#circle-icon"></use>
-                                                    </svg>
-                                                    <span class="detail-label">Formats</span>
-                                                    <span class="bold">MP4, JPEG and PNG</span>
-                                                </li>
-                                                <li>
-                                                    <svg class="crumina-icon bullet-icon">
-                                                        <use xlinkHref="#circle-icon"></use>
-                                                    </svg>
-                                                    <span class="detail-label">Contract Address</span>
-                                                    <span class="bold">0xf7a6...f643</span>
-                                                </li>
-                                                <li>
-                                                    <svg class="crumina-icon bullet-icon">
-                                                        <use xlinkHref="#circle-icon"></use>
-                                                    </svg>
-                                                    <span class="detail-label">Token ID</span>
-                                                    <span class="bold">3584</span>
-                                                </li>
-                                                <li>
-                                                    <svg class="crumina-icon bullet-icon">
-                                                        <use xlinkHref="#circle-icon"></use>
-                                                    </svg>
-                                                    <span class="detail-label">Token Standard</span>
-                                                    <span class="bold">ERC-721</span>
-                                                </li>
-                                                <li>
-                                                    <svg class="crumina-icon bullet-icon">
-                                                        <use xlinkHref="#circle-icon"></use>
-                                                    </svg>
-                                                    <span class="detail-label">Blockchain</span>
-                                                    <span class="bold">Ethereum</span>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <AdditionalDetails />
                                     </div>
                                 </div>
 
                                 <div id="tab3" class="tab">
                                     <div class="tab-content">
-                                        <div class="activity-item sale">
-                                            <div class="bid-placer">
-                                                <div class="avatar box-42">
-                                                    <Link to="/profile-page">
-                                                        <img src={avatar} alt="avatar" />
-                                                        <span class="verified">
-                                                            <svg class="crumina-icon">
-                                                                <use xlinkHref="#check-icon"></use>
-                                                            </svg>
-                                                        </span>
-                                                    </Link>
-                                                </div>
-                                                <div class="bid-info">
-                                                    <div class="bid-title">
-                                                        <span class="gradient-text">
-                                                            <Link to="/profile-page">Dexter Stark</Link>
-                                                        </span>{" "}
-                                                        sold
-                                                    </div>
-                                                    <div class="bid-date">53 minutes ago</div>
-                                                </div>
-                                            </div>
-                                            <div class="bid-box">
-                                                <div class="crypto-value">2.31 ETH</div>
-                                                <div class="currency-value">125.230 U$D</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="activity-item purchase">
-                                            <div class="bid-placer">
-                                                <div class="avatar box-42">
-                                                    <Link to="/profile-page">
-                                                        <img src={avatar14} alt="avatar" />
-                                                    </Link>
-                                                </div>
-                                                <div class="bid-info">
-                                                    <div class="bid-title">
-                                                        <span class="gradient-text">
-                                                            <Link to="/profile-page">Derek Greyson</Link>
-                                                        </span>{" "}
-                                                        purchased
-                                                    </div>
-                                                    <div class="bid-date">56 minutes ago</div>
-                                                </div>
-                                            </div>
-                                            <div class="bid-box">
-                                                <div class="crypto-value">2.31 ETH</div>
-                                                <div class="currency-value">125.230 U$D</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="activity-item listing">
-                                            <div class="bid-placer">
-                                                <div class="avatar box-42">
-                                                    <Link to="/profile-page">
-                                                        <img src={avatar2} alt="avatar" />
-                                                        <span class="verified">
-                                                            <svg class="crumina-icon">
-                                                                <use xlinkHref="#check-icon"></use>
-                                                            </svg>
-                                                        </span>
-                                                    </Link>
-                                                </div>
-                                                <div class="bid-info">
-                                                    <div class="bid-title">
-                                                        <span class="gradient-text">
-                                                            <Link to="/profile-page">Jackie Jones</Link>
-                                                        </span>{" "}
-                                                        listed
-                                                    </div>
-                                                    <div class="bid-date">58 minutes ago</div>
-                                                </div>
-                                            </div>
-                                            <div class="bid-box">
-                                                <div class="crypto-value">2.31 ETH</div>
-                                                <div class="currency-value">125.230 U$D</div>
-                                            </div>
-                                        </div>
+                                        <ActivityCard img1={avatar} tag="sale" username="Dexter Stark" time="53 minutes ago" eth="2.31 ETH" amount="125.230 U$D" />
+                                        <ActivityCard img1={avatar} tag="purchase" username="Derek Greyson" time="53 minutes ago" eth="2.31 ETH" amount="125.230 U$D" />
+                                        <ActivityCard img1={avatar2} tag="listing" username="Jackie Jones" time="53 minutes ago" eth="2.31 ETH" amount="125.230 U$D" />
                                     </div>
                                 </div>
                             </div>

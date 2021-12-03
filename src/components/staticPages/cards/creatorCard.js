@@ -9,12 +9,12 @@ const CreatorCard = () => {
             <div class="creator-info-wrapper">
                 <div class="creator-info">
                     <div class="avatar box-64">
-                        <a href="08-profile-page.html">
+                        <a href="/profile-page">
                             <img src={avatar} alt="avatar" /><span class ="verified"><svg class ="crumina-icon">
                             <use xlinkHref="#check-icon"></use>
                             </svg></span></a>
                     </div>
-                    <div class="title"><a href="08-profile-page.html">Dexter Stark</a></div>
+                    <div class="title"><a href="/profile-page">Dexter Stark</a></div>
                     <div class="item-meta"><span class="gradient-text">@DexterStark</span></div>
                 </div>
                 <div class="follow-me">
@@ -44,13 +44,13 @@ const CreatorCard = () => {
                 </p>
             </div>
             <div class="projects-previews">
-                <div class="preview-box"><a href="07-product-page-v3.html"><img
+                <div class="preview-box"><a href="/product-page-v3"><img
                     src={projectThumb1} alt="" /></a></div>
-                <div class="preview-box"><a href="07-product-page-v3.html"><img
+                <div class="preview-box"><a href="/product-page-v3"><img
                      src={projectThumb2} alt="" /></a></div>
-                <div class="preview-box"><a href="07-product-page-v3.html"><img
+                <div class="preview-box"><a href="/product-page-v3"><img
                      src={projectThumb21} alt="" /></a></div>
-                <div class="preview-box more-projects"><a href="08-profile-page.html"><svg class="crumina-icon">
+                <div class="preview-box more-projects"><a href="/profile-page"><svg class="crumina-icon">
                     <use xlinkHref="#dots-icon"></use>
                 </svg></a></div>
             </div>

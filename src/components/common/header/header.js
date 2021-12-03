@@ -40,16 +40,16 @@ const Header = () => {
                                     </ul>
                                 </li>
                                 <li class="menu-item"><Link class="menu-link" to="/creator">Creators</Link></li>
-                                <li class="menu-item"><Link class="menu-link" to="11-collectors.html">Collectors</Link></li>
+                                <li class="menu-item"><Link class="menu-link" to="/creator">Collectors</Link></li>
                                 <li class="menu-item"><Link class="menu-link" to="/spotlight">Spotlight</Link></li>
                                 <li class="menu-item menu-item-has-children"><Link class="menu-link" to="#">Product<span
                                     class="indicator"><svg class="crumina-icon">
                                         <use xlinkHref="#arrow-down-icon"></use>
                                     </svg></span></Link>
                                     <ul class="submenu">
-                                        <li class="menu-item"><Link class="menu-link" to="05-product-page.html">Product v1</Link>
+                                        <li class="menu-item"><Link class="menu-link" to="/product-page">Product v1</Link>
                                         </li>
-                                        <li class="menu-item"><Link class="menu-link" to="06-product-page-v2.html">Product v2</Link>
+                                        <li class="menu-item"><Link class="menu-link" to="/product-page-v2">Product v2</Link>
                                         </li>
                                         <li class="menu-item"><Link class="menu-link" to="/product-page-v3">Product v3</Link>
                                         </li>
@@ -71,8 +71,8 @@ const Header = () => {
                                                         <li class="menu-item"><Link to="/item-versions" class="menu-link">Item versions</Link>
                                                         </li>
                                                         <li class="menu-item"><Link to="/spotlight" class="menu-link">Spotlight</Link></li>
-                                                        <li class="menu-item"><Link to="05-product-page.html" class="menu-link">Product page</Link></li>
-                                                        <li class="menu-item"><Link to="06-product-page-v2.html" class="menu-link">Product page
+                                                        <li class="menu-item"><Link to="/product-page" class="menu-link">Product page</Link></li>
+                                                        <li class="menu-item"><Link to="/product-page-v2" class="menu-link">Product page
                                                             v2</Link></li>
                                                     </ul>
                                                     <ul class="submenu-column">
@@ -98,9 +98,9 @@ const Header = () => {
                                                         <li class="menu-item"><Link to="/profile-page-about" class="menu-link">Profile page
                                                             about</Link></li>
                                                         <li class="menu-item"><Link to="/profile-info" class="menu-link">Profile info</Link></li>
-                                                        <li class="menu-item"><Link to="26-upload-artwork.html" class="menu-link">Upload artwork</Link>
+                                                        <li class="menu-item"><Link to="/upload-artwork" class="menu-link">Upload artwork</Link>
                                                         </li>
-                                                        <li class="menu-item"><Link to="25-notifications.html" class="menu-link">Notifications</Link>
+                                                        <li class="menu-item"><Link to="/notification" class="menu-link">Notifications</Link>
                                                         </li>
                                                         <li class="menu-item"><Link to="27-shopping-cart.html" class="menu-link">Shopping cart</Link>
                                                         </li>
@@ -109,8 +109,8 @@ const Header = () => {
                                                     <ul class="submenu-column">
                                                         <li class="menu-item"><Link to="/activity" class="menu-link">Activity</Link></li>
                                                         <li class="menu-item"><Link to="/creator" class="menu-link">Creators</Link></li>
-                                                        <li class="menu-item"><Link to="11-collectors.html" class="menu-link">Collectors</Link></li>
-                                                        <li class="menu-item"><Link to="24-become-a-creator.html" class="menu-link">Become a
+                                                        <li class="menu-item"><Link to="/creator" class="menu-link">Collectors</Link></li>
+                                                        <li class="menu-item"><Link to="/become-a-creator" class="menu-link">Become a
                                                             creator</Link></li>
                                                         <li class="menu-item"><Link to="/connect-a-wallet" class="menu-link">Connect a
                                                             wallet</Link></li>
@@ -209,7 +209,7 @@ const Header = () => {
                     </button>
 
                     <div class="collection-box">
-                        <Link class="btn btn-normal btn-dark create-collection" to="26-upload-artwork.html">Create</Link>
+                        <Link class="btn btn-normal btn-dark create-collection" to="/upload-artwork">Create</Link>
                         <div class="collection-title"><Link to="/profile-page">My Collection<span
                             class="count colored">12</span></Link></div>
                     </div>
@@ -232,12 +232,11 @@ const Header = () => {
 
                                     <div class="cart-product">
                                         <div class="thumb-box">
-                                            aaaa
-                                            <Link to="05-product-page.html"><img src={notiThunb1} width="50" height="50" alt="UI templates" loading="lazy" /></Link>
+                                            <Link to="/product-page"><img src={notiThunb1} width="50" height="50" alt="UI templates" loading="lazy" /></Link>
                                         </div>
                                         <div class="purchase-info">
                                             <div class="product-info">
-                                                <div class="product-title"><Link to="05-product-page.html">Cryptoki NFT and Digital Market PSD
+                                                <div class="product-title"><Link to="/product-page">Cryptoki NFT and Digital Market PSD
                                                     Template</Link></div>
                                                 <div class="product-price">$12.00</div>
                                             </div>
@@ -247,11 +246,11 @@ const Header = () => {
 
                                     <div class="cart-product">
                                         <div class="thumb-box">
-                                            <Link to="06-product-page-v2.html"><img src={notiThunb2} width="50" height="50" alt="Social graphics" loading="lazy" /></Link>
+                                            <Link to="/product-page-v2"><img src={notiThunb2} width="50" height="50" alt="Social graphics" loading="lazy" /></Link>
                                         </div>
                                         <div class="purchase-info">
                                             <div class="product-info">
-                                                <div class="product-title"><Link to="06-product-page-v2.html">Twitter Gaming Headers Pack 04</Link>
+                                                <div class="product-title"><Link to="/product-page-v2">Twitter Gaming Headers Pack 04</Link>
                                                 </div>
                                                 <div class="product-price">$40.00</div>
                                             </div>
@@ -315,7 +314,7 @@ const Header = () => {
                                         <div class="notification-info">
                                             <div class="message">
                                                 <Link to="/profile-page" class="bold">@JackieJ</Link> just commented on <Link
-                                                    to="05-product-page.html" class="bold">Cryptoki NFT
+                                                    to="/product-page" class="bold">Cryptoki NFT
                                                     and Digital Market PSD Template</Link>
                                             </div>
                                             <div class="publish-date">2 minutes ago</div>
@@ -333,7 +332,7 @@ const Header = () => {
                                         <div class="notification-info">
                                             <div class="message">
                                                 <Link to="/profile-page" class="bold">@CrimsonRay</Link> just purchased<Link
-                                                    to="06-product-page-v2.html" class="bold"> Cryptoki NFT
+                                                    to="/product-page-v2" class="bold"> Cryptoki NFT
                                                     and Digital Market PSD Template</Link>
                                             </div>
                                             <div class="publish-date">10 minutes ago</div>
@@ -367,14 +366,14 @@ const Header = () => {
                                         </div>
                                         <div class="notification-info">
                                             <div class="message"><Link to="/profile-page" class="bold">@CrimsonRay</Link> just reviewed
-                                                <Link to="05-product-page.html" class="bold">Cryptoki NFT and Digital Market PSD Template</Link>
+                                                <Link to="/product-page" class="bold">Cryptoki NFT and Digital Market PSD Template</Link>
                                             </div>
                                             <div class="publish-date">49 minutes ago</div>
                                         </div>
                                     </div>
 
                                 </div>
-                                <Link to="25-notifications.html" class="btn-small-fullwidth btn-dark btn-square">View all
+                                <Link to="/notification" class="btn-small-fullwidth btn-dark btn-square">View all
                                     Notifications</Link>
                             </div>
                         </div>
@@ -441,7 +440,7 @@ const Header = () => {
                                         </svg>Notification Settings</Link>
                                     </li>
                                     <li class="artwork">
-                                        <Link to="26-upload-artwork.html"><svg class="crumina-icon">
+                                        <Link to="/upload-artwork"><svg class="crumina-icon">
                                             <use xlinkHref="#picture-icon"></use>
                                         </svg>Create Artwork</Link>
                                     </li>

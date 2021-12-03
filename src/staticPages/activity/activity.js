@@ -36,46 +36,46 @@ const Activity = () => {
                             <div class="activity-list">
                                 <div class="activity-item bid">
                                     <div class="bid-placer">
-                                        <div class="avatar box-42"><a href="08-profile-page.html">
+                                        <div class="avatar box-42"><a href="/profile-page">
                                             <img src={avatar15} alt="avatar" /></a>
                                         </div>
                                         <div class="bid-info">
                                             <div class="bid-title">Bid placed by <span class="gradient-text"><a
-                                                href="08-profile-page.html">Crimson
+                                                href="/profile-page">Crimson
                                                 Ray</a></span> of 2.31ETH (125.230 U$D) for <span
-                                                    class="colored"><a href="06-product-page-v2.html">Breathing
+                                                    class="colored"><a href="/product-page-v2">Breathing
                                                         Nature</a></span> by <span class="gradient-text"><a
-                                                            href="08-profile-page.html">Dexter Stark</a></span></div>
+                                                            href="/profile-page">Dexter Stark</a></span></div>
                                             <div class="bid-date">32 minutes ago</div>
                                         </div>
                                     </div>
-                                    <div class="bid-product"><a href="06-product-page-v2.html">
+                                    <div class="bid-product"><a href="/product-page-v2">
                                         <img src={projectThumb1} alt="" /></a>
                                     </div>
                                 </div>
                                 <div class="activity-item bid">
                                     <div class="bid-placer">
-                                        <div class="avatar box-42"><a href="08-profile-page.html">
+                                        <div class="avatar box-42"><a href="/profile-page">
                                             <img src={avatar8} alt="avatar" /></a>
                                         </div>
                                         <div class="bid-info">
                                             <div class="bid-title">Bid placed by <span class="gradient-text"><a
-                                                href="08-profile-page.html">JennArt</a></span> of 1.90ETH
+                                                href="/profile-page">JennArt</a></span> of 1.90ETH
                                                 (86.325 U$D) for
-                                                <span class="colored"><a href="06-product-page-v2.html">Social
+                                                <span class="colored"><a href="/product-page-v2">Social
                                                     Blockz</a></span> by <span class="gradient-text"><a
-                                                        href="08-profile-page.html">Jackie Jones</a></span>
+                                                        href="/profile-page">Jackie Jones</a></span>
                                             </div>
                                             <div class="bid-date">39 minutes ago</div>
                                         </div>
                                     </div>
-                                    <div class="bid-product"><a href="06-product-page-v2.html">
+                                    <div class="bid-product"><a href="/product-page-v2">
                                         <img src={projectThumb5} alt="" /></a>
                                     </div>
                                 </div>
                                 <div class="activity-item like">
                                     <div class="bid-placer">
-                                        <div class="avatar box-42"><a href="08-profile-page.html">
+                                        <div class="avatar box-42"><a href="/profile-page">
                                             <img src={avatar5} alt="avatar" /></a><span class="verified"><svg
                                                 class="crumina-icon">
                                                 <use xlinkHref="#check-icon"></use>
@@ -83,19 +83,19 @@ const Activity = () => {
                                         </div>
                                         <div class="bid-info">
                                             <div class="bid-title"><span class="gradient-text"><a
-                                                href="08-profile-page.html">Noir Artworks</a></span>
-                                                liked <span class="colored"><a href="06-product-page-v2.html">Canary’s
+                                                href="/profile-page">Noir Artworks</a></span>
+                                                liked <span class="colored"><a href="/product-page-v2">Canary’s
                                                     Kitchen</a></span></div>
                                             <div class="bid-date">47 minutes ago</div>
                                         </div>
                                     </div>
-                                    <div class="bid-product"><a href="06-product-page-v2.html">
+                                    <div class="bid-product"><a href="/product-page-v2">
                                         <img src={projectThumb16} alt="" /></a>
                                     </div>
                                 </div>
                                 <div class="activity-item follow">
                                     <div class="bid-placer">
-                                        <div class="avatar box-42"><a href="08-profile-page.html">
+                                        <div class="avatar box-42"><a href="/profile-page">
                                             <img src={avatar10} alt="avatar" /></a><span
                                                 class="verified"><svg class="crumina-icon">
                                                     <use xlinkHref="#check-icon"></use>
@@ -103,16 +103,16 @@ const Activity = () => {
                                         </div>
                                         <div class="bid-info">
                                             <div class="bid-title"><span class="gradient-text"><a
-                                                href="08-profile-page.html">Nicholas Stevens</a></span>
+                                                href="/profile-page">Nicholas Stevens</a></span>
                                                 is now following <span class="gradient-text"><a
-                                                    href="08-profile-page.html">Jackie Jones</a></span></div>
+                                                    href="/profile-page">Jackie Jones</a></span></div>
                                             <div class="bid-date">52 minutes ago</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="activity-item sale">
                                     <div class="bid-placer">
-                                        <div class="avatar box-42"><a href="08-profile-page.html">
+                                        <div class="avatar box-42"><a href="/profile-page">
                                             <img src={avatar} alt="avatar" /></a><span class="verified"><svg
                                                 class="crumina-icon">
                                                 <use xlinkHref="#check-icon"></use>
@@ -120,40 +120,40 @@ const Activity = () => {
                                         </div>
                                         <div class="bid-info">
                                             <div class="bid-title"><span class="gradient-text"><a
-                                                href="08-profile-page.html">Dexter Stark</a></span> sold
-                                                <span class="colored"><a href="06-product-page-v2.html">Golden
+                                                href="/profile-page">Dexter Stark</a></span> sold
+                                                <span class="colored"><a href="/product-page-v2">Golden
                                                     Ebony</a></span> for 1.97ETH (104.368 U$D)
                                             </div>
                                             <div class="bid-date">53 minutes ago</div>
                                         </div>
                                     </div>
-                                    <div class="bid-product"><a href="06-product-page-v2.html">
+                                    <div class="bid-product"><a href="/product-page-v2">
                                         <img src={projectThumb17} alt="" /></a>
                                     </div>
                                 </div>
                                 <div class="activity-item purchase">
                                     <div class="bid-placer">
-                                        <div class="avatar box-42"><a href="08-profile-page.html">
+                                        <div class="avatar box-42"><a href="/profile-page">
                                             <img src={avatar14} alt="avatar" /></a>
                                         </div>
                                         <div class="bid-info">
                                             <div class="bid-title"><span class="gradient-text"><a
-                                                href="08-profile-page.html">Derek Greyson</a></span>
+                                                href="/profile-page">Derek Greyson</a></span>
                                                 purchased <span class="colored"><a
-                                                    href="06-product-page-v2.html">Bubblegum Dream</a></span> for
+                                                    href="/product-page-v2">Bubblegum Dream</a></span> for
                                                 3.01ETH
                                                 (169.478 U$D)
                                             </div>
                                             <div class="bid-date">56 minutes ago</div>
                                         </div>
                                     </div>
-                                    <div class="bid-product"><a href="06-product-page-v2.html">
+                                    <div class="bid-product"><a href="/product-page-v2">
                                         <img src={projectThumb8} alt="" /></a>
                                     </div>
                                 </div>
                                 <div class="activity-item listing">
                                     <div class="bid-placer">
-                                        <div class="avatar box-42"><a href="08-profile-page.html">
+                                        <div class="avatar box-42"><a href="/profile-page">
                                             <img src={avatar2} alt="avatar" /></a><span class="verified"><svg
                                                 class="crumina-icon">
                                                 <use xlinkHref="#check-icon"></use>
@@ -161,33 +161,33 @@ const Activity = () => {
                                         </div>
                                         <div class="bid-info">
                                             <div class="bid-title"><span class="gradient-text"><a
-                                                href="08-profile-page.html">Jackie Jones</a></span> just
-                                                listed <span class="colored"><a href="06-product-page-v2.html">Soul Picz
+                                                href="/profile-page">Jackie Jones</a></span> just
+                                                listed <span class="colored"><a href="/product-page-v2">Soul Picz
                                                     Block</a></span> for 3.25ETH (259.022
                                                 U$D)
                                             </div>
                                             <div class="bid-date">58 minutes ago</div>
                                         </div>
                                     </div>
-                                    <div class="bid-product"><a href="06-product-page-v2.html">
+                                    <div class="bid-product"><a href="/product-page-v2">
                                         <img src={projectThumb9} alt="" /></a>
                                     </div>
                                 </div>
                                 <div class="activity-item bid">
                                     <div class="bid-placer">
-                                        <div class="avatar box-42"><a href="08-profile-page.html">
+                                        <div class="avatar box-42"><a href="/profile-page">
                                             <img src={avatar15} alt="avatar" /></a>
                                         </div>
                                         <div class="bid-info">
                                             <div class="bid-title">Bid placed by <span class="gradient-text"><a
-                                                href="08-profile-page.html">Crimson
+                                                href="/profile-page">Crimson
                                                 Ray</a></span> of 0.25ETH (67.007u$d) for <span
                                                     class="colored"><a
-                                                        href="06-product-page-v2.html">Octo-Oceanic</a></span></div>
+                                                        href="/product-page-v2">Octo-Oceanic</a></span></div>
                                             <div class="bid-date">59 minutes ago</div>
                                         </div>
                                     </div>
-                                    <div class="bid-product"><a href="06-product-page-v2.html">
+                                    <div class="bid-product"><a href="/product-page-v2">
                                         <img src={projectThumb14} alt="" /></a>
                                     </div>
                                 </div>

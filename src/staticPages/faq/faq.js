@@ -82,27 +82,27 @@ const FaqPage = () => {
         <Header />
         <SubHeader />
 
-        <div class="primary-content-area section-medium content-padding">
-            <div class="page-title text-center">
-                <h2>Frequently <span class="gradient-text">Asked Questions</span></h2>
+        <div className="primary-content-area section-medium content-padding">
+            <div className="page-title text-center">
+                <h2>Frequently <span className="gradient-text">Asked Questions</span></h2>
             </div>
-            <div class="accordion">
+            <div className="accordion">
                 {(faqData || []).map((v, i) => {
-                    return <div class="accordion-card" key={i}>
-                        <div class="card-header">
-                            <div class="card-button">
-                                <div class="card-title">{v.title}</div>
-                                <div class="icon-box"> <svg class="crumina-icon plus-icon show">
+                    return <div className="accordion-card" key={i}>
+                        <div className="card-header">
+                            <div className="card-button">
+                                <div className="card-title">{v.title}</div>
+                                <div className="icon-box"> <svg className="crumina-icon plus-icon show">
                                     <use xlinkHref="#minus-icon"></use>
                                 </svg>
-                                    <svg class="crumina-icon minus-icon">
+                                    <svg className="crumina-icon minus-icon">
                                         <use xlinkHref="#minus-icon"></use>
                                     </svg>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <div class="card-info">{v.data}</div>
+                        <div className="card-body">
+                            <div className="card-info">{v.data}</div>
                         </div>
                     </div>
                 })}

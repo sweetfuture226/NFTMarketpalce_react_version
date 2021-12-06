@@ -645,7 +645,7 @@ CRYPTOKI.darkMode = function () {
                 currentTheme = 'light';
             }
         }
-
+        console.log(currentTheme, "currentTheme");
         if (currentTheme === "dark") {
             document.body.classList.add("dark-mode");
             button.checked = true;
@@ -656,11 +656,13 @@ CRYPTOKI.darkMode = function () {
         button.addEventListener('change', function (e) {
             document.body.classList.remove("light-mode", "dark-mode");
 
-            if (!e.target.checked) {
+            if (currentTheme === "dark") {
                 document.body.classList.add("light-mode");
+                button.checked = false;
                 var theme = document.body.classList.contains("light-mode") ? "light" : "dark";
             } else {
                 document.body.classList.add("dark-mode");
+                button.checked = true;
                 var theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
             }
             localStorage.setItem("theme", theme);

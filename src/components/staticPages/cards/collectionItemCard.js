@@ -1,11 +1,11 @@
 const CollectionItemCard = ({ img, itemName, itemCounts }) => {
-    return <div class="collection-item">
+    return <div className="collection-item">
         <a href="/explore">
-            <div class="cover-image"><img src={img} alt="" />
+            <div className="cover-image"><img src={img} alt="" />
             </div>
-            <div class="collection-info">
-                <div class="title h3">{itemName}</div>
-                <div class="number">{itemCounts} items</div>
+            <div className="collection-info">
+                <div className="title h3">{itemName}</div>
+                <div className="number">{itemCounts} items</div>
             </div>
         </a>
     </div>

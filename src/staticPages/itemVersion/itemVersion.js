@@ -13,13 +13,13 @@ const ItemVersion = () => {
             <Header />
             <SubHeader />
 
-            <div class="primary-content-area container content-padding">
-                <div class="section-padding">
-                    <div class="section-title-wrapper">
-                        <div class="section-title">Item <span class="gradient-text">Version 01</span></div>
+            <div className="primary-content-area container content-padding">
+                <div className="section-padding">
+                    <div className="section-title-wrapper">
+                        <div className="section-title">Item <span className="gradient-text">Version 01</span></div>
                     </div>
 
-                    <div class="featured-box grid-4-columns">
+                    <div className="featured-box grid-4-columns">
                         <CardItem count="22" img1={featureItem1} img2={avatar} heading="The Molten Heart" subHeading="@DexterStark" currBid="4.07 ETH" />
                         <CardItem count="22" img1={featureItem1} img2={avatar} heading="The Molten Heart" subHeading="@DexterStark" currBid="4.07 ETH" />
                         <CardItem count="22" img1={featureItem1} img2={avatar} heading="The Molten Heart" subHeading="@DexterStark" currBid="4.07 ETH" />
@@ -27,40 +27,40 @@ const ItemVersion = () => {
                     </div>
                 </div>
 
-                <div class="section-padding">
-                    <div class="section-title-wrapper">
-                        <div class="section-title">Item <span class="gradient-text">Version 02</span></div>
+                <div className="section-padding">
+                    <div className="section-title-wrapper">
+                        <div className="section-title">Item <span className="gradient-text">Version 02</span></div>
                     </div>
 
-                    <div class="featured-box grid-6-columns">
+                    <div className="featured-box grid-6-columns">
                         <CardItem2 likes="22" img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
                         <CardItem2 likes="22" img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
                         <CardItem2 likes="22" img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
                         <CardItem2 likes="22" img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
                         <CardItem2 likes="22" img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
                         <CardItem2 likes="22" img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
-                    </div>
-                </div>
-
-                <div class="section-padding">
-                    <div class="section-title-wrapper">
-                        <div class="section-title">Item <span class="gradient-text">Version 03</span></div>
-                    </div>
-
-                    <div class="featured-box grid-4-columns">
-                        <CardItem3 creator="Dexter Stark" bidReplaced="Crimson Ray" edition="1 / 50" img3={avatar15} img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
-                        <CardItem3 creator="Dexter Stark" bidReplaced="Crimson Ray" edition="1 / 50" img3={avatar15} img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
-                        <CardItem3 creator="Dexter Stark" bidReplaced="Crimson Ray" edition="1 / 50" img3={avatar15} img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
-                        <CardItem3 creator="Dexter Stark" bidReplaced="Crimson Ray" edition="1 / 50" img3={avatar15} img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
                     </div>
                 </div>
 
-                <div class="section-padding">
-                    <div class="section-title-wrapper">
-                        <div class="section-title">Item <span class="gradient-text">Version 04</span></div>
+                <div className="section-padding">
+                    <div className="section-title-wrapper">
+                        <div className="section-title">Item <span className="gradient-text">Version 03</span></div>
                     </div>
 
-                    <div class="featured-box grid-4-columns">
+                    <div className="featured-box grid-4-columns">
+                        <CardItem3 creator="Dexter Stark" bidReplaced="Crimson Ray" edition="1 / 50" img3={avatar15} img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
+                        <CardItem3 creator="Dexter Stark" bidReplaced="Crimson Ray" edition="1 / 50" img3={avatar15} img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
+                        <CardItem3 creator="Dexter Stark" bidReplaced="Crimson Ray" edition="1 / 50" img3={avatar15} img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
+                        <CardItem3 creator="Dexter Stark" bidReplaced="Crimson Ray" edition="1 / 50" img3={avatar15} img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
+                    </div>
+                </div>
+
+                <div className="section-padding">
+                    <div className="section-title-wrapper">
+                        <div className="section-title">Item <span className="gradient-text">Version 04</span></div>
+                    </div>
+
+                    <div className="featured-box grid-4-columns">
                         <CardItem4 count="22" creator="Dexter Stark" img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
                         <CardItem4 count="22" creator="Dexter Stark" img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />
                         <CardItem4 count="22" creator="Dexter Stark" img1={featureItem1} img2={avatar} heading="The Molten Heart" currBid="4.07 ETH" />

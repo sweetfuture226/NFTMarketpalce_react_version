@@ -12,11 +12,11 @@ const SwipeSlider = ({img1, img2, username, heading, currBid}) => {
             />
         </picture>
 
-        <div class="dark-overlay"></div>
-        <div class="slide-content">
-            <div class="item-info">
-                <div class="item-meta">
-                    <span class="avatar box-26">
+        <div className="dark-overlay"></div>
+        <div className="slide-content">
+            <div className="item-info">
+                <div className="item-meta">
+                    <span className="avatar box-26">
                         <Link to="/profile-page">
                             <picture>
                                 <img
@@ -28,34 +28,34 @@ const SwipeSlider = ({img1, img2, username, heading, currBid}) => {
                                 />
                             </picture>
                         </Link>
-                        <span class="verified">
-                            <svg class="crumina-icon">
+                        <span className="verified">
+                            <svg className="crumina-icon">
                                 <use xlinkHref="#check-icon"></use>
                             </svg>
                         </span>
                     </span>
                     {username}
                 </div>
-                <div class="title slide-title">{heading}</div>
-                <div class="item-bid-section">
-                    <div class="bid-item">
-                        <div class="label">Current bid</div>
-                        <div class="value">{currBid}</div>
+                <div className="title slide-title">{heading}</div>
+                <div className="item-bid-section">
+                    <div className="bid-item">
+                        <div className="label">Current bid</div>
+                        <div className="value">{currBid}</div>
                     </div>
-                    <div class="bid-item">
-                        <div class="label">AUCTION ENDING IN</div>
-                        <div class="countdown">
-                            <div class="value">
+                    <div className="bid-item">
+                        <div className="label">AUCTION ENDING IN</div>
+                        <div className="countdown">
+                            <div className="value">
                                 <span
-                                    class="js-countdown"
+                                    className="js-countdown"
                                     data-timer="19560"
                                     data-labels="d : , h : , m : , s"
                                 ></span>
                             </div>
                         </div>
                     </div>
-                    <div class="gradient-border_white-bg slide-button">
-                        <Link class="btn btn-normal" to="/product-page">
+                    <div className="gradient-border_white-bg slide-button">
+                        <Link className="btn btn-normal" to="/product-page">
                             Go to Item!
                         </Link>
                     </div>

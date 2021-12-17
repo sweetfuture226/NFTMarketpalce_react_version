@@ -137,8 +137,7 @@ const Header = () => {
                                         </li>
                                     </ul>
                                 </li>
-                                <li className="menu-item"><Link className="menu-link" to="/profile-page">My Collection<span className="count">
-                                    12</span></Link></li>
+                                <li className="menu-item"><Link className="menu-link" to="/profile-page">My Collection</Link></li>
                             </ul>
                         </div>
 
@@ -210,8 +209,7 @@ const Header = () => {
 
                     <div className="collection-box">
                         <Link className="btn btn-normal btn-dark create-collection" to="/upload-artwork">Create</Link>
-                        <div className="collection-title"><Link to="/profile-page">My Collection<span
-                            className="count colored">12</span></Link></div>
+                        <div className="collection-title"><Link to="/profile-page">My Collection</Link></div>
                     </div>
 
                     <div className="user-activity-buttons">
@@ -462,7 +460,7 @@ const Header = () => {
                                 </ul>
 
                             </div>
-                            <div className="profile-dropdown-footer">
+                            {/* <div className="profile-dropdown-footer">
 
                                 <div className="mode-toggle">
                                     <div className="mode-title"><span><svg className="crumina-icon">
@@ -474,7 +472,7 @@ const Header = () => {
                                     </label>
                                 </div>
 
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
